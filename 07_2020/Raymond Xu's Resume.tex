@@ -1,0 +1,226 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+% \usepackage{enumitem}
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+\geometry{margin=0.5 in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{paralist}
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0 pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\fontfamily{cmr}} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% fixes up the quotes
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+% \MakeOuterQuote{"}
+
+%%% turns off page numbering
+\pagenumbering{gobble}
+
+%%% text colors
+%%% text colors
+\usepackage[usenames, dvipsnames]{color}
+
+%%% END Article customizations
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\usepackage{algpseudocode}
+\usepackage{wrapfig}
+\usepackage{changepage}
+%%% The "real" document content comes below...
+
+\usepackage{listings,color,xcolor}
+\definecolor{dark-gray}{HTML}{969896}
+\definecolor{light-gray}{HTML}{F7F7F7}
+\definecolor{light-blue}{HTML}{0086B3}
+
+\lstset{ %
+  backgroundcolor=\color{light-gray},  % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  keywordstyle=\color{light-blue},     % keyword style
+  commentstyle=\color{dark-gray},      % comment style
+  basicstyle=\ttfamily,
+  escapeinside={\@}{\@},              % if you want to add LaTeX within your code
+  extendedchars=true,                  % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  keepspaces=true,                     % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  %%%%%%%%%%%%%%%switch language here%%%%%%%%%%%%%%%%%%%%%
+  language=C,             % the language of the code
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  tabsize=2,                           % sets default tabsize to 2 spaces
+  xleftmargin=10pt,xrightmargin=0pt,frame=tlbr,framesep=10pt,framerule=0pt
+}
+%%% The "real" document content comes below...
+
+\title{\vspace{-6ex} \Huge Raymond Y. Xu \vspace{-4ex}}
+
+\author{}
+\date{} % Activate to display a given date or no date (if empty),
+% otherwise the current date is printed 
+
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=0.9\textwidth]{asdf.png}
+%     \caption{asdf}
+%     \label{fig:asdf}
+% \end{figure}
+% \FloatBarrier
+
+% \begin{figure}[h!]
+% \centering
+% \begin{minipage}{.45\textwidth}
+%   \centering
+%   \includegraphics[width=.9\linewidth]{algo3d2.png}
+%   \captionof{figure}{asdf}
+%   \label{fig:test1}
+% \end{minipage}%
+% \hfill
+% \begin{minipage}{.45\textwidth}
+%   \centering
+%   \includegraphics[width=.9\linewidth]{algo3d1.png}
+%   \captionof{figure}{asdf}
+%   \label{fig:test2}
+% \end{minipage}
+% \end{figure}
+% \FloatBarrier
+
+% matrix
+% \[
+% \begin{bmatrix}
+%     x_{11}       & x_{12} & x_{13} & \dots & x_{1n} \\
+%     x_{21}       & x_{22} & x_{23} & \dots & x_{2n} \\
+%     \hdotsfor{5} \\
+%     x_{d1}       & x_{d2} & x_{d3} & \dots & x_{dn}
+% \end{bmatrix}
+% =
+% \begin{bmatrix}
+%     x_{11} & x_{12} & x_{13} & \dots  & x_{1n} \\
+%     x_{21} & x_{22} & x_{23} & \dots  & x_{2n} \\
+%     \vdots & \vdots & \vdots & \ddots & \vdots \\
+%     x_{d1} & x_{d2} & x_{d3} & \dots  & x_{dn}
+% \end{bmatrix}
+% \]
+
+% table
+% \begin{center}
+% \begin{tabular}{ c c c }
+%  cell1 & cell2 & cell3 \\ 
+%  cell4 & cell5 & cell6 \\  
+%  cell7 & cell8 & cell9    
+% \end{tabular}
+% \end{center}
+
+% piecewise
+% \[ \begin{cases} 
+%       0 & x\leq 0 \\
+%       1 & x > 0      
+%    \end{cases}
+% \]
+
+\begin{document}
+	\maketitle
+	\vspace{-2ex}
+	\begin{center}
+	% \small
+		(607) 227-4935 $|$ raymond.y.xu@gmail.com \\
+		 \vspace{-3ex}
+	\end{center}
+	\section*{Education}
+	\vspace{-7ex}
+	\begin{center}
+    \line(1,0){550}
+    \end{center}
+    \vspace{-1ex}
+    {\large\textbf{Cornell University, College of Engineering}}, Ithaca, NY \newline
+	Master of Engineering in Electrical and Computer Engineering \hfill 2018\newline
+	Bachelor of Science in Electrical and Computer Engineering%. Major GPA: 3.45 
+	\hfill 2017\newline
+	\vspace{-6ex}
+	\section*{Experience}
+	\vspace{-7ex}
+	\begin{center}
+    \line(1,0){550}
+    \end{center}
+    \vspace{-1ex}
+    \textbf{\large Machine Learning Engineer: Perception} \hfill July 2018 - May 2020 \vspace{-0ex}
+	\setlength{\parindent}{-0ex} \par
+		Johns Hopkins Applied Physics Lab | Laurel, MD \vspace{+1ex} \par
+		$\boldsymbol{\cdot}$ Worked on small teams on Navy research contracts related to imaging software and visual based navigation. \par \vspace{+1ex}
+		$\boldsymbol{\cdot}$ Led an internal research project to capture underwater images and extract depth information. \par \vspace{+1ex}
+		$\boldsymbol{\cdot}$ Created a orientation prediction network, predicting which way boats were facing based on images of them. \par \vspace{+1ex}
+		$\boldsymbol{\cdot}$ Designing and improving web and offline auto-annotation tools for detection, segmentation, and orientation.\par \vspace{+1ex}
+		$\boldsymbol{\cdot}$ Built detection systems for boats in long range infrared imagery in C++, training models in tensorflow. \par \vspace{+1ex}
+    \vspace{1 ex}
+    \textbf{\large Master of Engineering Design Project: Machine Learning} \hfill August 2017 - May 2018 \vspace{-0ex}
+	\setlength{\parindent}{-0ex} \par
+		Sabuncu Lab | Cornell University\vspace{+1ex} \par
+		$\boldsymbol{\cdot}$ Sabuncu Lab worked to improve the speed of MRI acquisition. \par \vspace{+1ex}
+		$\boldsymbol{\cdot}$ Achieved image registration of 3D brain MRIs using feature comparison in a siamese neural network. \par \vspace{+1ex}
+	\setlength{\itemindent}{0in} 
+    \textbf{\large Machine Learning Intern} \hfill December 2017 - January 2018 \vspace{-0ex}
+	\setlength{\parindent}{-0ex} \par
+		Expedition Technology | Sterling, VA \vspace{+1ex} \par
+		$\boldsymbol{\cdot}$ Improved specialized TensorFlow networks to classify radar emitters from 1D chirp signals. \par \vspace{+0ex}
+    
+	
+	\section*{Extracurricular Activities}
+	\vspace{-7ex}
+	\begin{center}
+    \line(1,0){550}
+    \end{center}
+    \vspace{-3ex}
+	% \begin{itemize}
+		\vspace{+2ex}
+		Radio show hosting, Classial guitar performance, Political Activism, Intramural sports
+		% \item[\textbf{Tech for Campaigns}:] Sat in online meetings, to campaign for the VA state electorate \hfill July 2019 - Present 
+		% \item[\textbf{TA for Digital Signal Processing}:] Held office hours, wrote assignments \hfill January 2018 - May 2018 
+	 %    \item[\textbf{Peer Advising}:] Led orientation sessions and advised freshman on course selection \hfill August 2016 - May 2018 
+		% \item[\textbf{Radio}:] WVBR FM 93.5 biweekly radio talk show host \hfill September 2014 - May 2018 
+		% \item[\textbf{Classical Guitar}:] Performed at Cornell's 13$^\textrm{th}$ President inauguration faculty reception, Cornell Perkins Prize 
+		% \item[\textbf{Intramural Sports}:] Player on intramural softball, basketball leagues \hfill July 2018 - Mar 2020
+		% $\boldsymbol{\cdot}$ Competed at two youth guitar competitions for the Guitar Foundation of America (GFA)
+	% \end{itemize}
+	\end{document}
