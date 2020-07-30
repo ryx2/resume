@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1596055503 "Raymond Xu's Resume.tex" "/home/raymond/resume/07_2020/Raymond Xu's Resume.pdf" "Raymond Xu's Resume" 1596055503
+["pdflatex"] 1596129813 "Raymond Xu's Resume.tex" "/home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.pdf" "Raymond Xu's Resume" 1596129813
   "/etc/texmf/web2c/texmf.cnf" 1596035106 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/raymond/resume/07_2020/Raymond Xu's Resume.aux" 1596055503 30 00c4328e8c6c75fce40642ef2bcfb215 ""
+  "/home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.aux" 1596129813 30 00c4328e8c6c75fce40642ef2bcfb215 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1480098698 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1480098698 928 2dc8d444221b7a635bb58038579b861a ""
@@ -125,11 +125,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1596035556 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1596035566 4133508 e59c7f0563d5fffa95d06c313df62da4 ""
-  "Raymond Xu's Resume.aux" 1596055503 30 00c4328e8c6c75fce40642ef2bcfb215 ""
-  "Raymond Xu's Resume.tex" 1596055502 10701 2e47fc7ddd0a6dd994e587e52487b384 ""
+  "Raymond Xu's Resume.aux" 1596129813 30 00c4328e8c6c75fce40642ef2bcfb215 ""
+  "Raymond Xu's Resume.tex" 1596129812 10794 3e181c9a42bd7322ae43bcde3a6aa3bc ""
   (generated)
-  "Raymond Xu's Resume.aux"
-  "/home/raymond/resume/07_2020/Raymond Xu's Resume.log"
-  "Raymond Xu's Resume.pdf"
   "/home/raymond/resume/07_2020/Raymond Xu's Resume.pdf"
+  "Raymond Xu's Resume.aux"
   "Raymond Xu's Resume.log"
+  "/home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.log"
+  "Raymond Xu's Resume.pdf"
+  "/home/raymond/resume/07_2020/Raymond Xu's Resume.log"
+  "/home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.pdf"

@@ -1,10 +1,10 @@
-PWD /home/raymond/resume/07_2020
+PWD /home/raymond/resume/07_2020_pronouns
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/raymond/resume/07_2020/Raymond Xu's Resume.tex
-OUTPUT /home/raymond/resume/07_2020/Raymond Xu's Resume.log
+INPUT /home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.tex
+OUTPUT /home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -128,9 +128,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /home/raymond/resume/07_2020/Raymond Xu's Resume.aux
-INPUT /home/raymond/resume/07_2020/Raymond Xu's Resume.aux
-OUTPUT /home/raymond/resume/07_2020/Raymond Xu's Resume.aux
+INPUT /home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.aux
+INPUT /home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.aux
+OUTPUT /home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.aux
 INPUT /usr/share/texmf/tex/latex/lm/ot1lmss.fd
 INPUT /usr/share/texmf/tex/latex/lm/ot1lmss.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmss10.tfm
@@ -210,9 +210,9 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/lmbsy10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmbsy7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmss8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmss8.tfm
-OUTPUT /home/raymond/resume/07_2020/Raymond Xu's Resume.pdf
+OUTPUT /home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /home/raymond/resume/07_2020/Raymond Xu's Resume.aux
+INPUT /home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.aux
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbsy10.pfb
