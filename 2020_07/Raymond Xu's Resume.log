@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.7.29)  30 JUL 2020 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.7.29)  17 SEP 2020 02:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"Raymond Xu's Resume.tex"
-(/home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.tex
+(/home/raymond/resume/07_2020/Raymond Xu's Resume.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -786,7 +786,7 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-(/home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.aux)
+(/home/raymond/resume/07_2020/Raymond Xu's Resume.aux)
 \openout1 = `"Raymond Xu's Resume.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
@@ -972,27 +972,38 @@ Overfull \hbox (24.76212pt too wide) in paragraph at lines 228--229
  | 
  []
 
+
+Overfull \hbox (13.53058pt too wide) in paragraph at lines 230--231
+\OT1/lmss/m/n/10.95 Machine Learn-ing, Python, Ten-sor-flow, Con-vo-lu-tional N
+eu-ral Net-works, Nat-u-ral Lan-guage Pro-cess-ing, C++, Javascript,
+ []
+
+
+Overfull \hbox (24.76212pt too wide) in paragraph at lines 236--237
+ | 
+ []
+
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(/home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.aux) ) 
+(/home/raymond/resume/07_2020/Raymond Xu's Resume.aux) ) 
 Here is how much of TeX's memory you used:
  9297 strings out of 492982
- 133194 string characters out of 6134896
+ 133113 string characters out of 6134896
  248146 words of memory out of 5000000
  12657 multiletter control sequences out of 15000+600000
  61013 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,49p,810b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/te
-xmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy
-.enc}</usr/share/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/font
-s/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on "/home/raymond/resume/07_2020_pronouns/Raymond Xu's Resume.pd
-f" (1 page, 114693 bytes).
+{/usr/share/texmf/fonts
+/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</us
+r/share/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on "/home/raymond/resume/07_2020/Raymond Xu's Resume.pdf" (1 pag
+e, 115310 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
