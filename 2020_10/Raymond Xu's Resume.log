@@ -1,24 +1,24 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.27)  8 NOV 2020 23:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  2 DEC 2020 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"Raymond Xu's Resume.tex"
 (./Raymond Xu's Resume.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-06-18>
+L3 programming layer <2020-09-24>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@section=\count168
-\c@subsection=\count169
-\c@subsubsection=\count170
-\c@paragraph=\count171
-\c@subparagraph=\count172
-\c@figure=\count173
-\c@table=\count174
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
@@ -41,9 +41,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count175
-\Gm@cntv=\count176
-\c@Gm@tempcnt=\count177
+\Gm@cnth=\count176
+\Gm@cntv=\count177
+\c@Gm@tempcnt=\count178
 \Gm@bindingoffset=\dimen135
 \Gm@wd@mp=\dimen136
 \Gm@odd@mp=\dimen137
@@ -69,7 +69,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen143
 \Gin@req@width=\dimen144
@@ -94,12 +94,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen152
 \cmidrulekern=\dimen153
 \defaultaddspace=\dimen154
-\@cmidla=\count178
-\@cmidlb=\count179
+\@cmidla=\count179
+\@cmidlb=\count180
 \@aboverulesep=\dimen155
 \@belowrulesep=\dimen156
-\@thisruleclass=\count180
-\@lastruleclass=\count181
+\@thisruleclass=\count181
+\@lastruleclass=\count182
 \@thisrulewidth=\dimen157
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
@@ -122,11 +122,10 @@ Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/05/30 v3.4k Customizing captions (AR)
+Package: caption 2020/09/12 v3.5b Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/05/30 v1.12 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 61.
+Package: caption3 2020/09/17 v2.1b caption3 kernel (AR)
 \captionmargin=\dimen160
 \captionmargin@=\dimen161
 \captionwidth=\dimen162
@@ -136,20 +135,20 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen166
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count182
-\c@continuedfloat=\count183
+\c@caption@flags=\count183
+\c@continuedfloat=\count184
 )
-\c@KVtest=\count184
+\c@KVtest=\count185
 \sf@farskip=\skip55
 \sf@captopadj=\dimen167
 \sf@capskip=\skip56
 \sf@nearskip=\skip57
-\c@subfigure=\count185
-\c@subfigure@save=\count186
-\c@lofdepth=\count187
-\c@subtable=\count188
-\c@subtable@save=\count189
-\c@lotdepth=\count190
+\c@subfigure=\count186
+\c@subfigure@save=\count187
+\c@lofdepth=\count188
+\c@subtable=\count189
+\c@subtable@save=\count190
+\c@lotdepth=\count191
 \sf@top=\skip58
 \sf@bottom=\skip59
 )
@@ -262,18 +261,18 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cftsubtabnumwidth=\skip105
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/06/10 3.45 The Babel package
+Package: babel 2020/09/01 3.48 The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/06/10 3.45 Babel common definitions
-\babel@savecnt=\count191
+File: babel.def 2020/09/01 3.48 Babel common definitions
+\babel@savecnt=\count192
 \U@D=\dimen168
 \l@babelnohyphens=\language7
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
 )
-\bbl@dirlevel=\count192
+\bbl@dirlevel=\count193
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
@@ -292,15 +291,15 @@ Package babel Info: \l@newzealand = using hyphenrules for english
 Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count193
+Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count194
 )
-\csq@reset=\count194
-\csq@gtype=\count195
-\csq@glevel=\count196
-\csq@qlevel=\count197
-\csq@maxlvl=\count198
-\csq@tshold=\count199
+\csq@reset=\count195
+\csq@gtype=\count196
+\csq@glevel=\count197
+\csq@qlevel=\count198
+\csq@maxlvl=\count199
+\csq@tshold=\count266
 \csq@ltx@everypar=\toks23
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
@@ -349,13 +348,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count266
+\inf@bad=\count267
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count267
-\leftroot@=\count268
+\uproot@=\count268
+\leftroot@=\count269
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count269
-\DOTSCASE@=\count270
+\classnum@=\count270
+\DOTSCASE@=\count271
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -364,15 +363,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen171
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count271
-\c@MaxMatrixCols=\count272
+\macc@depth=\count272
+\c@MaxMatrixCols=\count273
 \dotsspace@=\muskip16
-\c@parentequation=\count273
-\dspbrk@lvl=\count274
+\c@parentequation=\count274
+\dspbrk@lvl=\count275
 \tag@help=\toks25
-\row@=\count275
-\column@=\count276
-\maxfields@=\count277
+\row@=\count276
+\column@=\count277
+\maxfields@=\count278
 \andhelp@=\toks26
 \eqnshift@=\dimen172
 \alignsep@=\dimen173
@@ -411,49 +410,49 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count278
-\c@ALG@rem=\count279
-\c@ALG@nested=\count280
+\c@ALG@line=\count279
+\c@ALG@rem=\count280
+\c@ALG@nested=\count281
 \ALG@tlm=\skip109
 \ALG@thistlm=\skip110
-\c@ALG@Lnr=\count281
-\c@ALG@blocknr=\count282
-\c@ALG@storecount=\count283
-\c@ALG@tmpcounter=\count284
+\c@ALG@Lnr=\count282
+\c@ALG@blocknr=\count283
+\c@ALG@storecount=\count284
+\c@ALG@tmpcounter=\count285
 \ALG@tmplength=\skip111
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen178
 \WF@size=\dimen179
-\c@WF@wrappedlines=\count285
+\c@WF@wrappedlines=\count286
 \WF@box=\box49
 \WF@everypar=\toks29
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count286
-\cp@tempcnt=\count287
+\c@cp@cntr=\count287
+\cp@tempcnt=\count288
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count288
+\lst@mode=\count289
 \lst@gtempboxa=\box50
 \lst@token=\toks30
-\lst@length=\count289
+\lst@length=\count290
 \lst@currlwidth=\dimen180
-\lst@column=\count290
-\lst@pos=\count291
+\lst@column=\count291
+\lst@pos=\count292
 \lst@lostspace=\dimen181
 \lst@width=\dimen182
-\lst@newlines=\count292
-\lst@lineno=\count293
+\lst@newlines=\count293
+\lst@lineno=\count294
 \lst@maxwidth=\dimen183
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count294
-\lst@skipnumbers=\count295
+\c@lstnumber=\count295
+\lst@skipnumbers=\count296
 \lst@framebox=\box51
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -488,9 +487,9 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-06-23 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count296
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count297
 \l__pdf_internal_box=\box52
 )
 (./Raymond Xu's Resume.aux)
@@ -551,16 +550,16 @@ File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count297
+\scratchcounter=\count298
 \scratchdimen=\dimen184
 \scratchbox=\box53
-\nofMPsegments=\count298
-\nofMParguments=\count299
+\nofMPsegments=\count299
+\nofMParguments=\count300
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count300
+\MPscratchCnt=\count301
 \MPscratchDim=\dimen185
-\MPnumerator=\count301
-\makeMPintoPDFobject=\count302
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
 \everyMPtoPDFconversion=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -579,7 +578,7 @@ Package caption Info: changepage package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count303
+\c@lstlisting=\count304
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 65.
 
@@ -658,13 +657,13 @@ Overfull \hbox (24.76212pt too wide) in paragraph at lines 241--242
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 (./Raymond Xu's Resume.aux) ) 
 Here is how much of TeX's memory you used:
- 9258 strings out of 482343
- 134329 string characters out of 5946345
- 602242 words of memory out of 5000000
- 24884 multiletter control sequences out of 15000+600000
- 589711 words of font info for 66 fonts, out of 8000000 for 9000
+ 9365 strings out of 482747
+ 137266 string characters out of 5954502
+ 609877 words of memory out of 5000000
+ 24587 multiletter control sequences out of 15000+600000
+ 592461 words of font info for 71 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 47i,11n,51p,810b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,11n,51p,810b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/u
 sr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/p
 ublic/lm/lmbsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/sha
@@ -672,7 +671,7 @@ re/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmsy10.pfb>
-Output written on "Raymond Xu's Resume.pdf" (2 pages, 116510 bytes).
+Output written on "Raymond Xu's Resume.pdf" (2 pages, 116727 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
