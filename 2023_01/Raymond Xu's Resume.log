@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.21)  21 JAN 2023 17:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.21)  23 JAN 2023 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -783,25 +783,20 @@ Overfull \hbox (24.76212pt too wide) in paragraph at lines 185--186
  []
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 189.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 190.
 
 
-Overfull \hbox (24.76212pt too wide) in paragraph at lines 233--234
+Overfull \hbox (24.76212pt too wide) in paragraph at lines 234--235
  | 
  []
 
 
-Overfull \hbox (24.76212pt too wide) in paragraph at lines 243--244
+Overfull \hbox (24.76212pt too wide) in paragraph at lines 245--246
  | 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--250
-
- []
-
-
-Overfull \hbox (24.76212pt too wide) in paragraph at lines 255--256
+Overfull \hbox (24.76212pt too wide) in paragraph at lines 260--261
  | 
  []
 
@@ -815,7 +810,7 @@ Package rerunfilecheck Info: File `"Raymond Xu's Resume".out' has not changed.
 Here is how much of TeX's memory you used:
  16910 strings out of 478268
  270814 string characters out of 5846347
- 784403 words of memory out of 5000000
+ 785403 words of memory out of 5000000
  34848 multiletter control sequences out of 15000+600000
  526632 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -828,10 +823,10 @@ ype1/public/lm/lmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publi
 c/lm/lmss17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssb
 x10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><
 /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on "Raymond Xu's Resume.pdf" (1 page, 123272 bytes).
+Output written on "Raymond Xu's Resume.pdf" (1 page, 124188 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  7 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
