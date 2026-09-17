@@ -23,9 +23,14 @@ def escape(text):
 def contact_tex(line):
     parts = []
     for part in line.split(" | "):
-        url = "mailto:" + part if "@" in part else "https://" + part if ".com" in part else None
-        parts.append(r"\href{" + url + "}{" + escape(part) + "}" if url else escape(part))
-    return r"\enspace\textbar{}\enspace".join(parts)
+        label, separator, address = part.partition(": ")
+        prefix = label + separator if separator else ""
+        address = address if separator else part
+        url = "mailto:" + address if "@" in address else "https://" + address if ".com" in address else None
+        if url and url.startswith("https://") and "/" not in address:
+            url += "/"
+        parts.append(escape(prefix) + r"\href{" + url + "}{" + escape(address) + "}" if url else escape(part))
+    return r"\enspace\textbar{}\enspace{}".join(parts)
 
 
 def paragraphs(data):

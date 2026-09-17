@@ -2,7 +2,7 @@
 
 San Francisco, CA | (607) 227-4935 | raymond.y.xu@gmail.com
 
-rayxc.com | linkedin.com/in/raymond-y-xu | github.com/ryx2
+Company website: rayxc.com | Blog: www.raymondyxu.com | linkedin.com/in/raymond-y-xu | github.com/ryx2
 
 Machine learning engineer and Y Combinator S24 founder building AI products from model development to customer workflows. Experience in Google Assistant retrieval, document understanding, and AI agents for real estate.
 
