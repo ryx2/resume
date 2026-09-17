@@ -33,19 +33,19 @@
 \raggedright
 
 \newcommand{\ResumeSection}[1]{%
-  \par\addvspace{7pt}\Needspace{42pt}%
+  \par\addvspace{6pt}\Needspace{42pt}%
   {\fontsize{13}{15}\selectfont\bfseries #1\par}%
   \vspace{2pt}\hrule height 0.4pt\vspace{4pt}}
 \newcommand{\ResumeRole}[3]{%
-  \par\addvspace{5pt}\Needspace{49pt}%
+  \par\addvspace{3pt}\Needspace{49pt}%
   {\fontsize{11}{13}\selectfont\bfseries #1\par}%
   {\itshape #2\hfill\upshape #3\par}\nopagebreak}
 \newenvironment{ResumeItems}{%
   \begin{itemize}[label=\textbullet,leftmargin=11pt,labelsep=5pt,
-    topsep=3pt,itemsep=2pt,parsep=0pt,partopsep=0pt]}{\end{itemize}}
+    topsep=1.5pt,itemsep=0.7pt,parsep=0pt,partopsep=0pt]}{\end{itemize}}
 
 \begin{document}
-\fontsize{10.5}{12.2}\selectfont
+\fontsize{10.5}{11.8}\selectfont
 \begin{center}
 {\fontsize{27}{29}\selectfont Raymond Xu}\par\vspace{3pt}
 {\small San Francisco, CA\enspace\textbar{}\enspace(607) 227-4935\enspace\textbar{}\enspace\href{mailto:raymond.y.xu@gmail.com}{raymond.y.xu@gmail.com}}\par
@@ -60,15 +60,17 @@ Machine learning engineer and Y Combinator S24 founder building AI products from
 \ResumeSection{Experience}
 \ResumeRole{Founder}{RayXC}{Jan 2026 - Present}
 \begin{ResumeItems}
-\item Hit 6k MRR with Raysurfer.com, an AI employee that got better as it learned about your customers with agentic memory.
-\item Built Talkshi, an agent marketplace with service discovery, provider matching, agent-written reviews, and payment integrations; implemented TypeScript APIs using Vercel, Cloudflare Workers, and PostgreSQL.
-\item Created Cliff for data-center siting research and prototyped Redliner for native Word tracked changes and comments.
+\item Hit 6k MRR with Raysurfer.com, an AI employee that got better as it learned about your customers with agentic memory and agentic voting based on customer interaction.
+\item Created Cliff for data-center land siting research, landed 1 pilot with a private equity firm
+\item Built Talkshi, an agent marketplace for business services, with service discovery, provider matching, agent-written reviews, and payment integrations; implemented TypeScript APIs using Vercel, Cloudflare Workers, and PostgreSQL.
 \end{ResumeItems}
 \ResumeRole{Co-Founder}{Modern Realty (YC S24)}{Mar 2024 - Jan 2026}
 \begin{ResumeItems}
-\item Co-founded an AI home-buying company with over \$500,000 in total commission revenue and 19 homebuyers from approximately 350 leads (about 5\% conversion); managed two employees.
-\item Built agents and tool-execution harnesses with OpenAI o1, Anthropic models, and PydanticAI for buyer communication, tour scheduling, and property research.
-\item Implemented database-backed agent memory, Python test-based evaluations, and human handoffs to realtors by text and email; handled approximately 10,000 outbound and 5,000 inbound texts through Twilio.
+\item Co-founded an AI home-buying company with over \$500,000 in total commission revenue and 19 homebuyers from approximately 350 leads
+\item Managed two employees, one engineer and one designer.
+\item Built agents and tool-execution harnesses with OpenAI o1, Anthropic's sonnet 3.5 and sonnet 4, and PydanticAI typing for buyer communication, tour scheduling, and property research.
+\item Implemented database-backed agent memory, Python test-based evaluations, and human handoffs to realtors by text and email; handled approximately 20,000 outbound and 10,000 inbound texts through Twilio.
+\item Measured and improved client response rates by tweaking text messaging tone, messaging frequency, and messaging time of day through agentic cron job tuning
 \end{ResumeItems}
 \ResumeRole{Founder}{Entori.io}{Jul 2023 - Mar 2024}
 \begin{ResumeItems}
@@ -76,7 +78,7 @@ Machine learning engineer and Y Combinator S24 founder building AI products from
 \end{ResumeItems}
 \ResumeRole{Machine Learning Engineer}{Vana}{Apr 2023 - Jul 2023}
 \begin{ResumeItems}
-\item Prototyped generative AI products with Stable Diffusion and optimized LoRA training for personalized models.
+\item Prototyped and productionlized Stable Diffusion LoRA training to create image models of users and their pets based on their uploads.
 \end{ResumeItems}
 \ResumeRole{Machine Learning Software Engineer}{Google}{Oct 2020 - Apr 2023}
 \begin{ResumeItems}
@@ -86,8 +88,8 @@ Machine learning engineer and Y Combinator S24 founder building AI products from
 \end{ResumeItems}
 \ResumeRole{Machine Learning Engineer}{Johns Hopkins Applied Physics Laboratory}{Jul 2018 - May 2020}
 \begin{ResumeItems}
-\item Developed infrared detection, segmentation, and object-orientation models for UAV navigation using Python, C++, TensorFlow, and Keras.
-\item Led an internal research project on low-light underwater imaging and depth estimation.
+\item Wrote custom SSD CNNs infrared detection, segmentation, and object-orientation models for UAV navigation using Python, C++, TensorFlow, and Keras.
+\item Deployed onto a Nvidia Jetson Tx2.
 \end{ResumeItems}
 \ResumeSection{Education}
 \textbf{Cornell University} \textbar{} Master of Engineering, Electrical and Computer Engineering \textbar{} 2018\par

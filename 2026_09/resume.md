@@ -22,16 +22,18 @@ Applied AI: AI/LLMs, OpenAI, Anthropic, Open source models, PydanticAI, MCP, Har
 **Founder**
 RayXC Jan 2026 - Present
 
-- Hit 6k MRR with Raysurfer.com, an AI employee that got better as it learned about your customers with agentic memory.
-- Built Talkshi, an agent marketplace with service discovery, provider matching, agent-written reviews, and payment integrations; implemented TypeScript APIs using Vercel, Cloudflare Workers, and PostgreSQL.
-- Created Cliff for data-center siting research and prototyped Redliner for native Word tracked changes and comments.
+- Hit 6k MRR with Raysurfer.com, an AI employee that got better as it learned about your customers with agentic memory and agentic voting based on customer interaction.
+- Created Cliff for data-center land siting research, landed 1 pilot with a private equity firm
+- Built Talkshi, an agent marketplace for business services, with service discovery, provider matching, agent-written reviews, and payment integrations; implemented TypeScript APIs using Vercel, Cloudflare Workers, and PostgreSQL.
 
 **Co-Founder**
 Modern Realty (YC S24) Mar 2024 - Jan 2026
 
-- Co-founded an AI home-buying company with over $500,000 in total commission revenue and 19 homebuyers from approximately 350 leads (about 5% conversion); managed two employees.
-- Built agents and tool-execution harnesses with OpenAI o1, Anthropic models, and PydanticAI for buyer communication, tour scheduling, and property research.
-- Implemented database-backed agent memory, Python test-based evaluations, and human handoffs to realtors by text and email; handled approximately 10,000 outbound and 5,000 inbound texts through Twilio.
+- Co-founded an AI home-buying company with over $500,000 in total commission revenue and 19 homebuyers from approximately 350 leads
+- Managed two employees, one engineer and one designer.
+- Built agents and tool-execution harnesses with OpenAI o1, Anthropic's sonnet 3.5 and sonnet 4, and PydanticAI typing for buyer communication, tour scheduling, and property research.
+- Implemented database-backed agent memory, Python test-based evaluations, and human handoffs to realtors by text and email; handled approximately 20,000 outbound and 10,000 inbound texts through Twilio.
+- Measured and improved client response rates by tweaking text messaging tone, messaging frequency, and messaging time of day through agentic cron job tuning
 
 **Founder**
 Entori.io Jul 2023 - Mar 2024
@@ -41,7 +43,7 @@ Entori.io Jul 2023 - Mar 2024
 **Machine Learning Engineer**
 Vana Apr 2023 - Jul 2023
 
-- Prototyped generative AI products with Stable Diffusion and optimized LoRA training for personalized models.
+- Prototyped and productionlized Stable Diffusion LoRA training to create image models of users and their pets based on their uploads.
 
 **Machine Learning Software Engineer**
 Google Oct 2020 - Apr 2023
@@ -53,8 +55,8 @@ Google Oct 2020 - Apr 2023
 **Machine Learning Engineer**
 Johns Hopkins Applied Physics Laboratory Jul 2018 - May 2020
 
-- Developed infrared detection, segmentation, and object-orientation models for UAV navigation using Python, C++, TensorFlow, and Keras.
-- Led an internal research project on low-light underwater imaging and depth estimation.
+- Wrote custom SSD CNNs infrared detection, segmentation, and object-orientation models for UAV navigation using Python, C++, TensorFlow, and Keras.
+- Deployed onto a Nvidia Jetson Tx2.
 
 ## Education
 

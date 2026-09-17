@@ -13,6 +13,8 @@ from build_resume import DATA, OUT, ROOT, STEM, paragraphs
 
 def normalize(text):
     text = unicodedata.normalize("NFKC", text)
+    # LaTeX's typographic apostrophes preserve the same words as source ASCII.
+    text = text.translate(str.maketrans({"\u2018": "'", "\u2019": "'"}))
     text = re.sub(r"(?m)^\s*[-\u2022]\s+", "", text)
     return re.sub(r"\s+", " ", text).strip()
 
