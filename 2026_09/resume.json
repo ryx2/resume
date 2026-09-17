@@ -67,13 +67,6 @@
       ]
     }
   ],
-  "projects": [
-    {
-      "name": "pytest-depper",
-      "url": "github.com/ryx2/pytest-depper",
-      "description": "Built a Python pytest plugin that uses Git changes and AST dependency analysis to select affected tests."
-    }
-  ],
   "education": [
     "Cornell University | Master of Engineering, Electrical and Computer Engineering | 2018",
     "Cornell University | Bachelor of Science, Electrical and Computer Engineering | 2017",

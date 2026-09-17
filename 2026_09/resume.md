@@ -46,12 +46,6 @@ Jul 2018 - May 2020
 - Developed infrared detection, segmentation, and object-orientation models for UAV navigation using Python, C++, TensorFlow, and Keras.
 - Led an internal research project on low-light underwater imaging and depth estimation.
 
-## Projects
-
-
-**pytest-depper | github.com/ryx2/pytest-depper**
-- Built a Python pytest plugin that uses Git changes and AST dependency analysis to select affected tests.
-
 ## Education
 
 Cornell University | Master of Engineering, Electrical and Computer Engineering | 2018

@@ -25,10 +25,6 @@ def paragraphs(data):
         result.append(("job", f'{job["employer"]} | {job["title"]}'))
         result.append(("date", job["dates"]))
         result += [("bullet", text) for text in job["bullets"]]
-    result += [("heading", "Projects")]
-    for project in data["projects"]:
-        result.append(("project", f'{project["name"]} | {project["url"]}'))
-        result.append(("bullet", project["description"]))
     result += [("heading", "Education")]
     result += [("body", line) for line in data["education"]]
     return result
@@ -101,13 +97,13 @@ def build():
         style = {"name": "Title", "heading": "Heading 1", "bullet": "List Bullet"}.get(kind)
         p = doc.add_paragraph(text, style=style)
         p.paragraph_format.keep_together = True
-        if kind in {"name", "contact", "job", "date", "project"}:
+        if kind in {"name", "contact", "job", "date"}:
             p.paragraph_format.keep_with_next = True
         if kind == "contact":
             p.paragraph_format.space_after = Pt(1)
             for run in p.runs:
                 run.font.size = Pt(9.5)
-        if kind in {"job", "project"}:
+        if kind == "job":
             p.paragraph_format.space_before = Pt(4)
             p.paragraph_format.space_after = Pt(0)
             for run in p.runs:
@@ -117,7 +113,7 @@ def build():
             for run in p.runs:
                 run.font.size = Pt(9.5)
         prefix = "- " if kind == "bullet" else ""
-        if kind in {"heading", "job", "project"}:
+        if kind in {"heading", "job"}:
             text_lines.append("")
             md_lines.append("")
         text_lines.append(prefix + text)
@@ -125,7 +121,7 @@ def build():
             md_lines.append("# " + text)
         elif kind == "heading":
             md_lines.extend(["## " + text, ""])
-        elif kind in {"job", "project"}:
+        elif kind == "job":
             md_lines.append("**" + text + "**")
         else:
             md_lines.append(prefix + text)
