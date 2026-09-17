@@ -9,11 +9,11 @@ Machine learning engineer and Y Combinator S24 founder building AI products from
 
 ## Skills
 
-Languages and infrastructure: Python, TypeScript, C++, SQL, Bash, Linux, PostgreSQL, Cloudflare Workers
+Languages: Python, TypeScript, C++, SQL, Bash, Linux, PostgreSQL, Cloudflare Workers
 
-Machine learning: TensorFlow, Keras, NLP, BERT, semantic retrieval, Stable Diffusion, LoRA
+Machine learning: Pytorch, TensorFlow, Keras, NLP, BERT, semantic retrieval, Stable Diffusion, LoRA
 
-Applied AI: Large language models (LLMs), OpenAI, Anthropic, PydanticAI, Model Context Protocol (MCP)
+Applied AI: AI/LLMs, OpenAI, Anthropic, Open source models, PydanticAI, MCP, Harnesses, Tool calls, Model evaluation, Agentic memory, Prompting, Self improving agents
 
 
 ## Experience
@@ -22,8 +22,8 @@ Applied AI: Large language models (LLMs), OpenAI, Anthropic, PydanticAI, Model C
 **Founder**
 RayXC Jan 2026 - Present
 
+- Hit 6k MRR with Raysurfer.com, an AI employee that got better as it learned about your customers with agentic memory.
 - Built Talkshi, an agent marketplace with service discovery, provider matching, agent-written reviews, and payment integrations; implemented TypeScript APIs using Vercel, Cloudflare Workers, and PostgreSQL.
-- Built Python and TypeScript SDKs for Raysurfer so AI agents could retrieve, reuse, and rate code from prior executions.
 - Created Cliff for data-center siting research and prototyped Redliner for native Word tracked changes and comments.
 
 **Co-Founder**
