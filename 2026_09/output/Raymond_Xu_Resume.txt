@@ -1,8 +1,6 @@
 Raymond Xu
 San Francisco, CA | (607) 227-4935 | raymond.y.xu@gmail.com
 rayxc.com | linkedin.com/in/raymond-y-xu | github.com/ryx2
-
-Summary
 Machine learning engineer and Y Combinator S24 founder building AI products from model development to customer workflows. Experience in Google Assistant retrieval, document understanding, and AI agents for real estate.
 
 Skills
@@ -12,34 +10,34 @@ Applied AI: Large language models (LLMs), OpenAI, Anthropic, PydanticAI, Model C
 
 Experience
 
-RayXC | Founder
-Jan 2026 - Present
+Founder
+RayXC Jan 2026 - Present
 - Built Talkshi, an agent marketplace with service discovery, provider matching, agent-written reviews, and payment integrations; implemented TypeScript APIs using Vercel, Cloudflare Workers, and PostgreSQL.
 - Built Python and TypeScript SDKs for Raysurfer so AI agents could retrieve, reuse, and rate code from prior executions.
 - Created Cliff for data-center siting research and prototyped Redliner for native Word tracked changes and comments.
 
-Modern Realty (YC S24) | Co-Founder
-Mar 2024 - Jan 2026
+Co-Founder
+Modern Realty (YC S24) Mar 2024 - Jan 2026
 - Co-founded an AI home-buying company with over $500,000 in total commission revenue and 19 homebuyers from approximately 350 leads (about 5% conversion); managed two employees.
 - Built agents and tool-execution harnesses with OpenAI o1, Anthropic models, and PydanticAI for buyer communication, tour scheduling, and property research.
 - Implemented database-backed agent memory, Python test-based evaluations, and human handoffs to realtors by text and email; handled approximately 10,000 outbound and 5,000 inbound texts through Twilio.
 
-Entori.io | Founder
-Jul 2023 - Mar 2024
+Founder
+Entori.io Jul 2023 - Mar 2024
 - Built a GPT-4 email service that automatically summarized real-estate disclosure documents for home buyers.
 
-Vana | Machine Learning Engineer
-Apr 2023 - Jul 2023
+Machine Learning Engineer
+Vana Apr 2023 - Jul 2023
 - Prototyped generative AI products with Stable Diffusion and optimized LoRA training for personalized models.
 
-Google | Machine Learning Software Engineer
-Oct 2020 - Apr 2023
+Machine Learning Software Engineer
+Google Oct 2020 - Apr 2023
 - Google Assistant (May 2022 - Apr 2023): Improved BERT embeddings for matching related voice queries on the NLP retrieval team; built experiment pipelines for new model features.
 - Document AI, small model training team (Oct 2020 - May 2022): Improved document named entity recognition (NER) in low-data settings with fewer than 10 examples.
 - Pretrained BiLSTM models with spatial invoice features and ran fine-tuning and tokenization experiments.
 
-Johns Hopkins Applied Physics Laboratory | Machine Learning Engineer
-Jul 2018 - May 2020
+Machine Learning Engineer
+Johns Hopkins Applied Physics Laboratory Jul 2018 - May 2020
 - Developed infrared detection, segmentation, and object-orientation models for UAV navigation using Python, C++, TensorFlow, and Keras.
 - Led an internal research project on low-light underwater imaging and depth estimation.
 

@@ -1,135 +1,105 @@
-"""Generate editable DOCX, Markdown, and plain text from one resume source."""
+"""Generate a LaTeX resume, plain text, and Markdown from the factual source."""
+import argparse
 import json
+import shutil
+import subprocess
 from pathlib import Path
-
-from docx import Document
-from docx.oxml import OxmlElement
-from docx.oxml.ns import qn
-from docx.shared import Inches, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parent
 DATA = json.loads((ROOT / "resume.json").read_text())
 OUT = ROOT / "output"
-OUT.mkdir(exist_ok=True)
 STEM = "Raymond_Xu_Resume"
 
 
+def escape(text):
+    replacements = {
+        "\\": r"\textbackslash{}", "&": r"\&", "%": r"\%", "$": r"\$",
+        "#": r"\#", "_": r"\_", "{": r"\{", "}": r"\}",
+        "~": r"\textasciitilde{}", "^": r"\textasciicircum{}", "|": r"\textbar{}",
+    }
+    return "".join(replacements.get(c, c) for c in text)
+
+
+def contact_tex(line):
+    parts = []
+    for part in line.split(" | "):
+        url = "mailto:" + part if "@" in part else "https://" + part if ".com" in part else None
+        parts.append(r"\href{" + url + "}{" + escape(part) + "}" if url else escape(part))
+    return r"\enspace\textbar{}\enspace".join(parts)
+
+
 def paragraphs(data):
+    """Expected PDF reading order, including the visual role/employer hierarchy."""
     result = [("name", data["name"])]
     result += [("contact", line) for line in data["contact"]]
-    result += [("heading", "Summary"), ("body", data["summary"])]
-    result += [("heading", "Skills")]
+    result += [("body", data["summary"]), ("heading", "Skills")]
     result += [("body", line) for line in data["skills"]]
     result += [("heading", "Experience")]
     for job in data["experience"]:
-        result.append(("job", f'{job["employer"]} | {job["title"]}'))
-        result.append(("date", job["dates"]))
+        result.append(("job", job["title"]))
+        result.append(("employer", job["employer"] + " " + job["dates"]))
         result += [("bullet", text) for text in job["bullets"]]
     result += [("heading", "Education")]
-    result += [("body", line) for line in data["education"]]
+    for line in data["education"]:
+        employer, degree, year = line.split(" | ")
+        result.append(("body", f"{employer} | {degree} | {year}"))
     return result
 
 
-def build():
-    doc = Document()
-    # The runtime's default template can carry a blue rule in the Title style.
-    # Strip paragraph borders so the exported resume stays plain black text.
-    for element in (doc.element, doc.styles.element):
-        for border in list(element.iter(qn("w:pBdr"))):
-            border.getparent().remove(border)
-    section = doc.sections[0]
-    section.page_width = Inches(8.5)
-    section.page_height = Inches(11)
-    section.top_margin = Inches(0.48)
-    section.bottom_margin = Inches(0.48)
-    section.left_margin = section.right_margin = Inches(0.62)
-    normal = doc.styles["Normal"]
-    normal.font.name = "Arial"
-    normal.font.size = Pt(10)
-    normal.font.color.rgb = RGBColor(0, 0, 0)
-    normal.paragraph_format.space_after = Pt(2)
-    normal.paragraph_format.line_spacing = 1.0
-    normal.paragraph_format.widow_control = True
-    for style_name in ("Title", "Heading 1", "List Bullet"):
-        style = doc.styles[style_name]
-        style.font.name = "Arial"
-        style.font.color.rgb = RGBColor(0, 0, 0)
-        style.element.get_or_add_rPr().get_or_add_rFonts().set(qn("w:hAnsi"), "Arial")
-    title = doc.styles["Title"]
-    title.font.size = Pt(22)
-    title.font.bold = True
-    title.paragraph_format.space_after = Pt(3)
-    heading = doc.styles["Heading 1"]
-    heading.font.size = Pt(10.5)
-    heading.font.bold = True
-    heading.paragraph_format.space_before = Pt(7)
-    heading.paragraph_format.space_after = Pt(3)
-    heading.paragraph_format.keep_with_next = True
-    bullet = doc.styles["List Bullet"]
-    bullet.font.size = Pt(10)
-    bullet.paragraph_format.left_indent = Inches(0.12)
-    bullet.paragraph_format.first_line_indent = Inches(-0.12)
-    bullet.paragraph_format.space_after = Pt(2)
-    # Use a real list with a plain hyphen in Arial; no Symbol-font glyphs.
-    for abstract in doc.part.numbering_part.element.findall(qn("w:abstractNum")):
-        for lvl in abstract.findall(qn("w:lvl")):
-            fmt = lvl.find(qn("w:numFmt"))
-            if fmt is not None and fmt.get(qn("w:val")) == "bullet":
-                lvl.find(qn("w:lvlText")).set(qn("w:val"), "-")
-                props = lvl.find(qn("w:rPr"))
-                if props is None:
-                    props = OxmlElement("w:rPr")
-                    lvl.append(props)
-                fonts = props.find(qn("w:rFonts"))
-                if fonts is None:
-                    fonts = OxmlElement("w:rFonts")
-                    props.append(fonts)
-                for attr in ("ascii", "hAnsi", "eastAsia", "cs"):
-                    fonts.set(qn(f"w:{attr}"), "Arial")
-    doc.core_properties.title = "Raymond Xu Resume"
-    doc.core_properties.author = "Raymond Xu"
-    doc.core_properties.subject = "Applied AI and Machine Learning"
-    doc.core_properties.keywords = ""
-    doc.core_properties.comments = ""
-    doc.core_properties.last_modified_by = "Raymond Xu"
+def build(compile_pdf=False):
+    OUT.mkdir(exist_ok=True)
+    content = [r"\begin{center}", r"{\fontsize{27}{29}\selectfont " + escape(DATA["name"]) + r"}\par\vspace{3pt}"]
+    content += [r"{\small " + contact_tex(line) + r"}\par" for line in DATA["contact"]]
+    content += [r"\end{center}", r"\vspace{1pt}", escape(DATA["summary"]) + r"\par"]
+    content.append(r"\ResumeSection{Skills}")
+    for line in DATA["skills"]:
+        label, text = line.split(": ", 1)
+        content.append(r"\textbf{" + escape(label) + ":} " + escape(text) + r"\par")
+    content.append(r"\ResumeSection{Experience}")
+    for job in DATA["experience"]:
+        args = [job["title"], job["employer"], job["dates"]]
+        content.append(r"\ResumeRole" + "".join("{" + escape(arg) + "}" for arg in args))
+        content.append(r"\begin{ResumeItems}")
+        content += [r"\item " + escape(text) for text in job["bullets"]]
+        content.append(r"\end{ResumeItems}")
+    content.append(r"\ResumeSection{Education}")
+    for line in DATA["education"]:
+        employer, degree, year = line.split(" | ")
+        content.append(r"\textbf{" + escape(employer) + r"} \textbar{} " + escape(degree) + r" \textbar{} " + escape(year) + r"\par")
+    template = (ROOT / "template.tex").read_text()
+    tex = ROOT / f"{STEM}.tex"
+    tex.write_text(template.replace("%%CONTENT%%", "\n".join(content)))
     text_lines, md_lines = [], []
     for kind, text in paragraphs(DATA):
-        style = {"name": "Title", "heading": "Heading 1", "bullet": "List Bullet"}.get(kind)
-        p = doc.add_paragraph(text, style=style)
-        p.paragraph_format.keep_together = True
-        if kind in {"name", "contact", "job", "date"}:
-            p.paragraph_format.keep_with_next = True
-        if kind == "contact":
-            p.paragraph_format.space_after = Pt(1)
-            for run in p.runs:
-                run.font.size = Pt(9.5)
-        if kind == "job":
-            p.paragraph_format.space_before = Pt(4)
-            p.paragraph_format.space_after = Pt(0)
-            for run in p.runs:
-                run.bold = True
-        if kind == "date":
-            p.paragraph_format.space_after = Pt(2)
-            for run in p.runs:
-                run.font.size = Pt(9.5)
-        prefix = "- " if kind == "bullet" else ""
         if kind in {"heading", "job"}:
             text_lines.append("")
             md_lines.append("")
+        prefix = "- " if kind == "bullet" else ""
         text_lines.append(prefix + text)
         if kind == "name":
-            md_lines.append("# " + text)
+            md_lines.extend(["# " + text, ""])
         elif kind == "heading":
             md_lines.extend(["## " + text, ""])
         elif kind == "job":
             md_lines.append("**" + text + "**")
+        elif kind == "employer":
+            md_lines.extend([text, ""])
         else:
             md_lines.append(prefix + text)
-    doc.save(OUT / f"{STEM}.docx")
+            if kind in {"contact", "body"}:
+                md_lines.append("")
     (OUT / f"{STEM}.txt").write_text("\n".join(text_lines) + "\n")
-    (ROOT / "resume.md").write_text("\n".join(md_lines) + "\n")
-    print(f"Built {OUT / (STEM + '.docx')}")
+    (ROOT / "resume.md").write_text("\n".join(md_lines).rstrip() + "\n")
+    print(f"Generated {tex}")
+    if compile_pdf:
+        compiler = shutil.which("tectonic")
+        if not compiler:
+            raise SystemExit("Install Tectonic (brew install tectonic), or compile the .tex with another LaTeX engine.")
+        subprocess.run([compiler, "--keep-logs", "--outdir", str(OUT), str(tex)], cwd=ROOT, check=True)
+        print(f"Compiled {OUT / (STEM + '.pdf')}")
 
 
 if __name__ == "__main__":
-    build()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--compile", action="store_true", help="Compile the generated LaTeX with Tectonic")
+    build(parser.parse_args().compile)

@@ -1,9 +1,9 @@
 # Raymond Xu Resume
 
-The current resume is in [`2026_09`](2026_09). Older LaTeX versions remain in their original dated directories.
+The current resume is built with LaTeX in [`2026_09`](2026_09), using the centered header, section rules, and right-aligned dates from the older resume. Older versions remain in their original dated directories.
 
 - [PDF](2026_09/output/Raymond_Xu_Resume.pdf)
-- [Editable Word document](2026_09/output/Raymond_Xu_Resume.docx)
+- [LaTeX source](2026_09/Raymond_Xu_Resume.tex)
 - [Plain text](2026_09/output/Raymond_Xu_Resume.txt)
 - [Readable source](2026_09/resume.md)
 - [Structured source](2026_09/resume.json)
@@ -12,24 +12,26 @@ The September 2026 version is a general AI engineering resume suitable for furth
 
 ## Editing and rebuilding
 
-Edit `2026_09/resume.json`; it is the single source for the DOCX, Markdown, and plain-text outputs. `build_resume.py` uses `python-docx`:
+Edit `2026_09/resume.json` for content and `2026_09/template.tex` for formatting. The generator uses only Python's standard library and compiles the PDF with Tectonic:
 
 ```sh
-uv run --with python-docx 2026_09/build_resume.py
+brew install tectonic
+uv run 2026_09/build_resume.py --compile
 ```
 
-Export the resulting Word file to PDF with LibreOffice or Word, keeping text selectable and preserving the one-page layout. In Codex, use the documents skill's bundled `render_docx.py` with `--emit_pdf`; it also renders page images for visual review. Copy the generated PDF into `2026_09/output/` before validation.
+The generated `2026_09/Raymond_Xu_Resume.tex` is a self-contained LaTeX document. It can be edited and compiled directly with XeLaTeX, including in Overleaf. Rebuilding from JSON overwrites direct edits to the generated `.tex`. The previous Word layout is retained under `2026_09/archive/`.
 
-With Poppler (`pdftotext`) installed, validate both final artifacts:
+With Poppler (`pdftotext`) installed, validate the final PDF:
 
 ```sh
-uv run --with python-docx --with pypdf --with pdfplumber 2026_09/check_resume.py
+uv run --with pypdf --with pdfplumber 2026_09/check_resume.py
+pdftoppm -scale-to 2000 -png 2026_09/output/Raymond_Xu_Resume.pdf 2026_09/qa/page
 ```
 
-The checker compares every paragraph against the source in order through DOCX and three independent PDF extraction libraries (Poppler, pypdf, pdfplumber), checks page size/count, excludes text boxes and layout tables, checks margins, and verifies small file sizes. QA output is stored locally under the ignored `2026_09/qa/` directory. Visually inspect the final rendered page after every content or formatting change.
+The checker compares all text against the source in order using Poppler, pypdf, and pdfplumber; checks embedded fonts and Unicode maps; checks page size/count and margins; and verifies the small file size. It also confirms the removed Projects section stays absent. QA output is stored locally under the ignored `2026_09/qa/` directory. Visually inspect the final rendered page after every content or formatting change.
 
 ## Automated parsing
 
-The resume uses a single column, standard section headings, real document paragraphs, readable text, and contact details in the body. It contains no photo, icons, text boxes, layout tables, or hidden keywords. This follows [Greenhouse's parsing guidance](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse) and [Workday's resume API guidelines](https://developer.workday.com/documentation/GUID-f07adb7f-630e-42a2-9de9-a39652e34ec5-enHYPHENus/ResumeRESTAPI).
+The resume uses a single column, standard section headings, selectable text, and contact details in normal document flow. Dates use ordinary paragraphs, not layout tables. It contains no photo, icons, text boxes, or hidden keywords. This follows [Greenhouse's parsing guidance](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse) and [Workday's resume API guidelines](https://developer.workday.com/documentation/GUID-f07adb7f-630e-42a2-9de9-a39652e34ec5-enHYPHENus/ResumeRESTAPI).
 
 Local text-extraction checks are not a commercial ATS test or a ranking score. Review the application system's parsed employer, title, date, education, and contact fields when applying, and tailor truthful keywords to each job description.
