@@ -1,0 +1,82 @@
+{
+  "name": "Raymond Xu",
+  "contact": [
+    "San Francisco, CA | (607) 227-4935 | raymond.y.xu@gmail.com",
+    "rayxc.com | linkedin.com/in/raymond-y-xu | github.com/ryx2"
+  ],
+  "summary": "Machine learning engineer and Y Combinator S24 founder building AI products from model development to customer workflows. Experience in Google Assistant retrieval, document understanding, and AI agents for real estate.",
+  "skills": [
+    "Languages and infrastructure: Python, TypeScript, C++, SQL, Bash, Linux, PostgreSQL, Cloudflare Workers",
+    "Machine learning: TensorFlow, Keras, NLP, BERT, semantic retrieval, Stable Diffusion, LoRA",
+    "Applied AI: Large language models (LLMs), OpenAI, Anthropic, PydanticAI, Model Context Protocol (MCP)"
+  ],
+  "experience": [
+    {
+      "employer": "RayXC",
+      "title": "Founder",
+      "dates": "Jan 2026 - Present",
+      "bullets": [
+        "Built Talkshi, an agent marketplace with service discovery, provider matching, agent-written reviews, and payment integrations; implemented TypeScript APIs using Vercel, Cloudflare Workers, and PostgreSQL.",
+        "Built Python and TypeScript SDKs for Raysurfer so AI agents could retrieve, reuse, and rate code from prior executions.",
+        "Created Cliff for data-center siting research and prototyped Redliner for native Word tracked changes and comments."
+      ]
+    },
+    {
+      "employer": "Modern Realty (YC S24)",
+      "title": "Co-Founder",
+      "dates": "Mar 2024 - Jan 2026",
+      "bullets": [
+        "Co-founded an AI home-buying company with over $500,000 in total commission revenue and 19 homebuyers from approximately 350 leads (about 5% conversion); managed two employees.",
+        "Built agents and tool-execution harnesses with OpenAI o1, Anthropic models, and PydanticAI for buyer communication, tour scheduling, and property research.",
+        "Implemented database-backed agent memory, Python test-based evaluations, and human handoffs to realtors by text and email; handled approximately 10,000 outbound and 5,000 inbound texts through Twilio."
+      ]
+    },
+    {
+      "employer": "Entori.io",
+      "title": "Founder",
+      "dates": "Jul 2023 - Mar 2024",
+      "bullets": [
+        "Built a GPT-4 email service that automatically summarized real-estate disclosure documents for home buyers."
+      ]
+    },
+    {
+      "employer": "Vana",
+      "title": "Machine Learning Engineer",
+      "dates": "Apr 2023 - Jul 2023",
+      "bullets": [
+        "Prototyped generative AI products with Stable Diffusion and optimized LoRA training for personalized models."
+      ]
+    },
+    {
+      "employer": "Google",
+      "title": "Machine Learning Software Engineer",
+      "dates": "Oct 2020 - Apr 2023",
+      "bullets": [
+        "Google Assistant (May 2022 - Apr 2023): Improved BERT embeddings for matching related voice queries on the NLP retrieval team; built experiment pipelines for new model features.",
+        "Document AI, small model training team (Oct 2020 - May 2022): Improved document named entity recognition (NER) in low-data settings with fewer than 10 examples.",
+        "Pretrained BiLSTM models with spatial invoice features and ran fine-tuning and tokenization experiments."
+      ]
+    },
+    {
+      "employer": "Johns Hopkins Applied Physics Laboratory",
+      "title": "Machine Learning Engineer",
+      "dates": "Jul 2018 - May 2020",
+      "bullets": [
+        "Developed infrared detection, segmentation, and object-orientation models for UAV navigation using Python, C++, TensorFlow, and Keras.",
+        "Led an internal research project on low-light underwater imaging and depth estimation."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "pytest-depper",
+      "url": "github.com/ryx2/pytest-depper",
+      "description": "Built a Python pytest plugin that uses Git changes and AST dependency analysis to select affected tests."
+    }
+  ],
+  "education": [
+    "Cornell University | Master of Engineering, Electrical and Computer Engineering | 2018",
+    "Cornell University | Bachelor of Science, Electrical and Computer Engineering | 2017",
+    "Y Combinator | Summer 2024 (S24) | Modern Realty"
+  ]
+}

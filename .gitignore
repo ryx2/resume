@@ -1,0 +1,5 @@
+.DS_Store
+__pycache__/
+.venv/
+2026_09/qa/
+2026_09/private-review.md
