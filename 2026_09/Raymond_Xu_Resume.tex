@@ -1,4 +1,4 @@
-% Generated content is inserted from resume.json by build_resume.py.
+% Edit this file directly; it is the resume's sole content source.
 % One-column LaTeX layout based on Raymond's earlier resume.
 \documentclass[11pt,letterpaper]{article}
 \usepackage[margin=0.52in]{geometry}
@@ -21,8 +21,11 @@
 \fi
 \usepackage{enumitem}
 \usepackage{needspace}
-\usepackage[hidelinks,unicode]{hyperref}
-\hypersetup{pdftitle={Raymond Xu Resume},pdfauthor={Raymond Xu}}
+\usepackage{xcolor}
+\usepackage[unicode,colorlinks=true,allcolors=blue]{hyperref}
+\hypersetup{pdftitle={Raymond Y. Xu Resume},pdfauthor={Raymond Y. Xu}}
+\let\ResumeOriginalHref\href
+\renewcommand{\href}[2]{\ResumeOriginalHref{#1}{\underline{#2}}}
 \renewcommand{\familydefault}{\sfdefault}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
@@ -42,55 +45,59 @@
   {\fontsize{11}{13}\selectfont\bfseries #1\par}%
   {\itshape #2\hfill\upshape #3\par}\nopagebreak}
 \newenvironment{ResumeItems}{%
-  \begin{itemize}[label=\textbullet,leftmargin=11pt,labelsep=5pt,
+  \begin{itemize}[label={\raisebox{0.15ex}{\fontsize{7}{7}\selectfont\rmfamily\textbullet}},leftmargin=11pt,labelsep=5pt,
     topsep=1.5pt,itemsep=0.7pt,parsep=0pt,partopsep=0pt]}{\end{itemize}}
 
 \begin{document}
 \fontsize{10.5}{11.8}\selectfont
 \begin{center}
-{\fontsize{27}{29}\selectfont Raymond Xu}\par\vspace{3pt}
+{\fontsize{27}{29}\selectfont Raymond Y. Xu}\par\vspace{3pt}
 {\small San Francisco, CA\enspace\textbar{}\enspace{}(607) 227-4935\enspace\textbar{}\enspace{}\href{mailto:raymond.y.xu@gmail.com}{raymond.y.xu@gmail.com}}\par
 {\small Company website: \href{https://rayxc.com/}{rayxc.com}\enspace\textbar{}\enspace{}Blog: \href{https://www.raymondyxu.com/}{www.raymondyxu.com}\enspace\textbar{}\enspace{}\href{https://linkedin.com/in/raymond-y-xu}{linkedin.com/in/raymond-y-xu}\enspace\textbar{}\enspace{}\href{https://github.com/ryx2}{github.com/ryx2}}\par
 \end{center}
 \vspace{1pt}
-Machine learning engineer and Y Combinator S24 founder building AI products from model development to customer workflows. Experience in Google Assistant retrieval, document understanding, and AI agents for real estate.\par
+ Y Combinator S24 founder and former Google Machine learning engineer building AI products from model development to customer workflows. Experience in RAG, document understanding, AI agents for my AI native real estate brokerage.\par
 \ResumeSection{Skills}
-\textbf{Languages:} Python, TypeScript, C++, SQL, Bash, Linux, PostgreSQL, Cloudflare Workers\par
-\textbf{Machine learning:} Pytorch, TensorFlow, Keras, NLP, BERT, semantic retrieval, Stable Diffusion, LoRA\par
-\textbf{Applied AI:} AI/LLMs, OpenAI, Anthropic, Gemini, Open source models, PydanticAI, MCP, Harnesses, Tool calls, Model evaluation, Agentic memory, Prompting, Self improving agents\par
+\textbf{Languages:} Python, TypeScript, C++, Bash, Linux, PostgreSQL, Redis, Docker\par
+\textbf{Machine learning:} PyTorch, TensorFlow, Keras, NLP, BERT, semantic retrieval, Stable Diffusion, LoRA\par
+\textbf{Applied AI:} AI/LLMs, OpenAI, Anthropic, Gemini, Open source models, PydanticAI, MCP, Harnesses, Tool calls, Agent evaluation, Agentic memory, Prompting, Prompt caching, Self improving agents, Claude Code, Codex, LLM observability\par
 \ResumeSection{Experience}
 \ResumeRole{Founder}{RayXC}{Jan 2026 - Present}
 \begin{ResumeItems}
-\item Raised \$120,000 for RayXC. Hit 6k MRR with Raysurfer.com, an AI employee that got better as it learned about your customers with agentic memory and agentic voting based on customer interaction.
-\item Created Cliff for data-center land siting research, landed 1 pilot with a private equity firm
-\item Built Talkshi, an agent marketplace for business services, with service discovery, provider matching, agent-written reviews, and payment integrations; implemented TypeScript APIs using Vercel, Cloudflare Workers, and PostgreSQL.
+\item Built \href{https://www.raysurfer.com/}{Raysurfer} to improve AI agent execution for logistics and email workflows using persistent memory stored in PlanetScale; reached \$6,000 in peak MRR from two paying startup customers. Raised \$120,000 for RayXC.
+\item Created \href{https://www.cliffcenter.com/}{Cliff} for data-center land siting research; secured a pilot with a private equity firm.
+\item Built \href{https://talkshi.com/}{Talkshi}, an agent marketplace for business services, with service discovery, provider matching, agent-written reviews, and payment integrations; implemented TypeScript APIs using Vercel, Cloudflare Workers, and PostgreSQL.
 \end{ResumeItems}
-\ResumeRole{Co-Founder}{Modern Realty (YC S24)}{Mar 2024 - Jan 2026}
+\ResumeRole{Co-Founder}{\href{https://news.ycombinator.com/item?id=41638199}{Modern Realty} (YC S24)}{Mar 2024 - Jan 2026}
 \begin{ResumeItems}
-\item Co-founded an AI home-buying company with over \$500,000 in total commission revenue and 19 homebuyers from approximately 350 leads. Raised \$1.3 million from Y Combinator, Pioneer Fund, and other angel investors.
+\item Co-founded an AI home-buying company with over \$550,000 in total commission revenue and 19 homebuyers from approximately 350 leads. Raised \$1.3 million from Y Combinator, Pioneer Fund, and other angel investors.
 \item Managed two employees, one engineer and one designer.
-\item Built agents and tool-execution harnesses with OpenAI o1 for crafting texts, Anthropic's sonnet 3.5 and sonnet 4 for tool calling, Gemini for document summary, and PydanticAI typing for buyer communication, tour scheduling, and property research.
-\item Implemented database-backed agent memory, Python test-based evaluations, and human handoffs to realtors by text and email; handled approximately 20,000 outbound and 10,000 inbound texts through Twilio.
-\item Measured and improved client response rates by tweaking text messaging tone, messaging frequency, and messaging time of day through agentic cron job tuning
+\item Built agents for buyer communication, tour scheduling, and property research. Using OpenAI for texting, Anthropic for tool calls, Gemini for document summary, and PydanticAI for typing; reduced realtors' texting workload by automating digital communication.
+\item Implemented SQLModel-backed agent memory, LLM-as-judge evaluations, LLM observability with Logfire, and tool-execution harnesses, with human handoffs to realtors by text and email.
+\item Handled approximately 20,000 outbound and 10,000 inbound texts through Twilio; agentically tuned cron jobs for auto-improving message tone, frequency, and send times to improve client response rates.
+% User-reported client response rate: approximately 25%. Kept out of the PDF
+% because the measurement period, denominator, and baseline are unspecified.
+% User described realtors as multiple times more effective; the published
+% wording describes the reduced texting workload without a numeric multiplier.
 \end{ResumeItems}
 \ResumeRole{Founder}{Entori.io}{Jul 2023 - Mar 2024}
 \begin{ResumeItems}
-\item Built a GPT-4 email service that automatically summarized real-estate disclosure documents for home buyers.
+\item Built a GPT-4 email service that automatically summarized real-estate disclosure documents for realtors; peaked at 60 weekly active users (WAU).
 \end{ResumeItems}
 \ResumeRole{Machine Learning Engineer}{Vana}{Apr 2023 - Jul 2023}
 \begin{ResumeItems}
-\item Prototyped and productionlized Stable Diffusion LoRA training to create image models of users and their pets based on their uploads.
+\item Stable Diffusion LoRA training on user-uploaded images to create personalized images of users and their pets.
 \end{ResumeItems}
 \ResumeRole{Machine Learning Software Engineer}{Google}{Oct 2020 - Apr 2023}
 \begin{ResumeItems}
-\item Google Assistant (May 2022 - Apr 2023): Improved BERT embeddings for matching related voice queries on the NLP retrieval team; built experiment pipelines for new model features.
-\item Document AI, small model training team (Oct 2020 - May 2022): Improved document named entity recognition (NER) in low-data settings with fewer than 10 examples.
+\item Google Assistant (May 2022 - Apr 2023): Developed and evaluated BERT embeddings for matching related voice queries on the NLP retrieval team; built experiment pipelines for new model features.
+% The Google Assistant BERT embedding work was experimental and did not ship.
+\item Document AI at Google Cloud, small model training team (Oct 2020 - May 2022): Improved F1 scores by approximately 2 percentage points for key invoice fields; improved document NER in low-data settings with fewer than 10 examples.
 \item Pretrained BiLSTM models with spatial invoice features and ran fine-tuning and tokenization experiments.
 \end{ResumeItems}
-\ResumeRole{Machine Learning Engineer}{Johns Hopkins Applied Physics Laboratory}{Jul 2018 - May 2020}
+\ResumeRole{Machine Learning Engineer}{\href{https://www.jhuapl.edu/}{Johns Hopkins Applied Physics Laboratory}}{Jul 2018 - May 2020}
 \begin{ResumeItems}
-\item Wrote custom SSD CNNs infrared detection, segmentation, and object-orientation models for UAV navigation using Python, C++, TensorFlow, and Keras.
-\item Deployed onto a Nvidia Jetson Tx2.
+\item Built infrared object-detection, segmentation, and orientation models for UAV navigation using SSD CNNs, Python, C++, TensorFlow, and Keras; deployed on NVIDIA Jetson TX2.
 \end{ResumeItems}
 \ResumeSection{Education}
 \textbf{Cornell University} \textbar{} Master of Engineering, Electrical and Computer Engineering \textbar{} 2018\par

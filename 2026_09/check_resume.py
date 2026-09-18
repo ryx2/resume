@@ -8,7 +8,99 @@ import unicodedata
 import pdfplumber
 from pypdf import PdfReader
 
-from build_resume import DATA, OUT, ROOT, STEM, paragraphs
+from build_resume import OUT, ROOT, STEM
+
+
+def without_comments(tex):
+    """Remove TeX comments while retaining escaped percent signs."""
+    result = []
+    i = 0
+    while i < len(tex):
+        if tex[i] == "\\":
+            result.append(tex[i:i + 2])
+            i += 2
+        elif tex[i] == "%":
+            end = tex.find("\n", i)
+            i = len(tex) if end < 0 else end + 1
+        else:
+            result.append(tex[i])
+            i += 1
+    return "".join(result)
+
+
+def display_text(source):
+    """Read the small set of display macros used in this resume's body.
+
+    Unknown commands fail explicitly so a future formatting change cannot
+    silently remove expected content from the extraction check.
+    """
+    def group(text, start):
+        while start < len(text) and text[start].isspace():
+            start += 1
+        if start >= len(text) or text[start] != "{":
+            raise ValueError(f"Expected LaTeX argument near {text[start:start + 40]!r}")
+        depth, i = 1, start + 1
+        while i < len(text):
+            if text[i] == "\\":
+                i += 2
+                continue
+            depth += (text[i] == "{") - (text[i] == "}")
+            if depth == 0:
+                return text[start + 1:i], i + 1
+            i += 1
+        raise ValueError("Unclosed LaTeX argument")
+
+    symbols = {"textbar": "|", "textbackslash": "\\", "textasciitilde": "~",
+               "textasciicircum": "^", "textbullet": "\u2022",
+               **{char: char for char in "%$&#_{}"}}
+    spaces = {"par", "item", "enspace", "quad", "qquad", "hfill", "\\", " "}
+    styles = {"small", "selectfont", "bfseries", "itshape", "upshape", "nopagebreak"}
+    wrappers = {"textbf", "textit", "emph", "underline", "ResumeSection"}
+
+    def render(text):
+        result, i = [], 0
+        while i < len(text):
+            if text[i] == "{":
+                value, i = group(text, i)
+                result.append(render(value))
+            elif text[i] == "\\":
+                match = re.match(r"\\([A-Za-z]+|.)", text[i:])
+                if not match:
+                    raise ValueError("Incomplete LaTeX command")
+                command = match[1]
+                i += match.end()
+                if command in symbols:
+                    result.append(symbols[command])
+                elif command in spaces:
+                    result.append("\n" if command in {"par", "item"} else " ")
+                elif command in styles:
+                    pass
+                elif command in wrappers:
+                    value, i = group(text, i)
+                    result.append("\n" + render(value) + "\n" if command == "ResumeSection" else render(value))
+                elif command in {"href", "ResumeRole", "fontsize", "vspace", "hspace", "begin", "end"}:
+                    count = {"href": 2, "ResumeRole": 3, "fontsize": 2}.get(command, 1)
+                    args = []
+                    for _ in range(count):
+                        value, i = group(text, i)
+                        args.append(value)
+                    if command == "href":
+                        result.append(render(args[1]))
+                    elif command == "ResumeRole":
+                        result.append("\n" + " ".join(render(arg) for arg in args) + "\n")
+                    elif command in {"begin", "end"}:
+                        if args[0] not in {"center", "ResumeItems"}:
+                            raise ValueError(f"Unsupported resume environment: {args[0]}")
+                        result.append("\n")
+                else:
+                    raise ValueError(f"Unsupported resume command: \\{command}")
+            else:
+                result.append(" " if text[i] == "~" else text[i])
+                i += 1
+        return "".join(result)
+
+    body = source.split(r"\begin{document}", 1)[1].split(r"\end{document}", 1)[0]
+    return render(body)
 
 
 def normalize(text):
@@ -23,8 +115,8 @@ def check():
     qa = ROOT / "qa"
     qa.mkdir(exist_ok=True)
     pdf = OUT / f"{STEM}.pdf"
-    expected = [text for _, text in paragraphs(DATA)]
-    expected_text = normalize("\n".join(expected))
+    tex = without_comments((ROOT / f"{STEM}.tex").read_text())
+    expected_text = normalize(display_text(tex))
     report = {"scope": "Local artifact and extraction checks; no commercial ATS was run.", "checks": {}}
 
     def require(name, condition):
@@ -32,9 +124,8 @@ def check():
         if not condition:
             raise AssertionError(name)
 
-    tex = (ROOT / f"{STEM}.tex").read_text()
     require("no_columns_or_layout_tables", not re.search(r"\\begin\{(?:tabular\*?|multicols|paracol|minipage)\}|\\twocolumn", tex))
-    require("projects_section_removed", "Projects" not in [t for k, t in paragraphs(DATA) if k == "heading"])
+    require("projects_section_removed", not re.search(r"\\ResumeSection\s*\{\s*Projects\s*\}", tex))
     reader = PdfReader(pdf)
     require("pdf_one_letter_page", len(reader.pages) == 1 and abs(float(reader.pages[0].mediabox.width) - 612) < 1 and abs(float(reader.pages[0].mediabox.height) - 792) < 1)
     require("pdf_not_encrypted", not reader.is_encrypted)
@@ -68,7 +159,7 @@ def check():
         require(f"{label}_all_content_in_source_order", normalize(text) == expected_text)
         require(f"{label}_no_replacement_characters", "\ufffd" not in text and "\u0000" not in text)
     report["files"] = {pdf.name: {"bytes": pdf.stat().st_size}}
-    report["paragraphs"] = len(expected)
+    report["source"] = f"{STEM}.tex"
     report["pages"] = len(reader.pages)
     (qa / "checks.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))

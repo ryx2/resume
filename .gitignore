@@ -2,7 +2,6 @@
 __pycache__/
 .venv/
 2026_09/qa/
-2026_09/private-review.md
 2026_09/output/*.log
 2026_09/output/*.aux
 2026_09/output/*.out

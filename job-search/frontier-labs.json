@@ -1,0 +1,444 @@
+{
+  "research_date": "2026-09-17",
+  "lab_target_count": 14,
+  "listed_role_record_count": 22,
+  "scope_note": "Separate lab track alongside original 30-company list. OpenAI/Anthropic overlap; shared parents mean lab brands are not independent employer counts. Verify each role’s stated status, especially broad SSI intake and any unverified Meta prospect.",
+  "labs": [
+    {
+      "company": "Anthropic",
+      "category": "General-purpose frontier models",
+      "lab_description": "Claude model research, training, evaluation and deployment.",
+      "lab_source": "https://job-boards.greenhouse.io/anthropic/jobs/5198255008",
+      "roles": [
+        {
+          "title": "Research Engineer, Model Evaluations",
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5198255008",
+          "location": "SF / NYC or remote-friendly with travel; posting states at least 25% office attendance, team may require more.",
+          "requirements": "Python, reliable distributed/data infrastructure and support during live training runs; ML evaluation and experimental design preferred.",
+          "work": "Design capability measurements and run evaluation infrastructure against training checkpoints with researchers.",
+          "fit": "Targeted stretch: ML experiments plus agent evals give a relevant starting point.",
+          "stretch": "Demonstrate measurement validity and infrastructure scale beyond application test cases.",
+          "research_proximity": "Direct participation in model evaluation and training feedback.",
+          "verification": "Live official role description and application form read September 17, 2026.",
+          "checked_date": "2026-09-17"
+        },
+        {
+          "title": "Software Engineer, Research Tools",
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/4981828008",
+          "location": "SF / NYC / Seattle; at least 25% office attendance under posting policy, team may require more.",
+          "requirements": "5+ years software engineering with full-stack focus; no ML or research experience required; startup experience preferred.",
+          "work": "Own researcher-facing experiment, feedback and model-analysis tools.",
+          "fit": "Strong engineering bridge: founder product execution and Python/TypeScript alongside real ML experience.",
+          "stretch": "Validate full-stack craft and sustained researcher collaboration; title does not confer training-research ownership.",
+          "research_proximity": "Builds tools directly with researchers; distinct from choosing model-training methods.",
+          "verification": "Live official role description and application form read September 17, 2026.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "Would I join recurring research reviews and own measurement decisions, or primarily build requested tooling? Who are my daily collaborators?",
+      "priority_note": "Make Model Evaluations and Research Tools primary lab conversations; existing Applied AI/FDE options remain alternatives, not prerequisites.",
+      "conversation_priority": 1
+    },
+    {
+      "company": "OpenAI",
+      "category": "General-purpose frontier models",
+      "lab_description": "Frontier agent models and their training, evaluation and product deployment.",
+      "lab_source": "https://openai.com/careers/research-engineer-frontier-evals-and-environments-san-francisco/",
+      "roles": [
+        {
+          "title": "Research Engineer, Frontier Evals & Environments",
+          "url": "https://openai.com/careers/research-engineer-frontier-evals-and-environments-san-francisco/",
+          "location": "San Francisco; office cadence and travel unstated.",
+          "requirements": "Strong ML/software/systems/statistics fundamentals plus hands-on relevant experience such as evaluations, agents or production ML; no PhD requirement stated.",
+          "work": "Build RL environments, capability measurements and continuous evaluation that inform major model training runs.",
+          "fit": "Targeted stretch: connects real agent failure analysis with prior ML experimentation.",
+          "stretch": "Need convincing evidence of experimental judgment, reliable measurement and implementation depth.",
+          "research_proximity": "Direct agent post-training and model-capability research.",
+          "verification": "Live official description and Apply link read September 17, 2026; separate ATS form not inspected.",
+          "checked_date": "2026-09-17"
+        },
+        {
+          "title": "Research Engineer, Codex",
+          "url": "https://openai.com/careers/research-engineer-codex-san-francisco/",
+          "location": "San Francisco; office cadence and travel unstated.",
+          "requirements": "Strong technical fundamentals, relevant hands-on agent/ML experience and ability to turn behavioral problems into experiments; no PhD requirement stated.",
+          "work": "Improve agent models through data, graders, training experiments, evals and production feedback.",
+          "fit": "Targeted stretch combining model experimentation with founder product judgment.",
+          "stretch": "Production harness usage alone is insufficient; show original experiments and technical contribution.",
+          "research_proximity": "Direct Codex model research, distinct from the earlier full-stack Codex product role.",
+          "verification": "Live official description and Apply link read September 17, 2026; separate ATS form not inspected.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "Which team would value my existing ML and agent work, what model experiments could I own, and who would review them?",
+      "priority_note": "Use Catherine's existing recruiting conversation to request research-engineering routing; do not begin a duplicate process.",
+      "conversation_priority": 2
+    },
+    {
+      "company": "Google DeepMind",
+      "category": "Frontier general-purpose model lab",
+      "lab_description": "Builds Gemini and other foundation models across language, multimodality, science and robotics.",
+      "lab_source": "https://deepmind.google/careers/",
+      "careers_url": "https://www.google.com/about/careers/applications/jobs/results?company=DeepMind",
+      "roles": [
+        {
+          "title": "Research Engineer, Machine Learning, GeminiApp Personalization, DeepMind",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/86287523508036294-research-engineer-machine-learning-geminiapp-personalization-deepmind",
+          "location": "Mountain View, CA; office cadence and travel unspecified in posting",
+          "requirements": "5+ years software and Python/C++; 3+ years shipping/testing software; 2+ years ML/applied AI; master's preferred, not PhD-required.",
+          "work": "Personalization features, fine-tuning/prompting, automated and human evaluation, and user-feedback analysis for Gemini App.",
+          "model_proximity": "Applied research and model-quality work within Gemini; closer to product and targeted fine-tuning than base-model pretraining.",
+          "fit": "Strong fit hypothesis: prior Google retrieval/NER, earlier ML engineering, founder fullstack ownership and agent memory/evals are directly relevant.",
+          "stretch": "Need evidence of rigorous personalization-quality measurement and production impact; frontier-scale training is not a stated minimum here.",
+          "verification": "Live official job index and detailed role with Apply observed in rendered browser; description also verified through web fetch.",
+          "checked_date": "2026-09-17"
+        },
+        {
+          "title": "Research Engineer, Serving Quality, DeepMind",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/112251165600555718-research-engineer-serving-quality-deepmind",
+          "location": "Mountain View, CA; office cadence and travel unspecified",
+          "requirements": "Bachelor's/equivalent; Python or C++; ML and statistics. Large-scale ML, experimentation, TensorFlow/JAX and transformer efficiency are preferred.",
+          "work": "Model-quality metrics, live experiment analysis, anomaly detection, replay/evaluation tooling and feedback to modeling teams.",
+          "model_proximity": "Direct model evaluation and serving-quality feedback; not ownership of base-model training.",
+          "fit": "Strong fit hypothesis for production ML, debugging agent failures, evaluation discipline and user-signal analysis.",
+          "stretch": "Demonstrate careful statistical experiment interpretation; clarify whether daily work is exploratory research or mostly reporting and operations.",
+          "verification": "Live official index and full detailed role with Apply observed in browser; web fetch returned transient 503, so browser was authoritative.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "Who are the engineers and researchers I would work with daily, and which model-quality decisions could I personally drive in the first six months?",
+      "priority_note": "High priority. The verified Bay Area RE openings provide a credible lab route with the user's actual ML history. The earlier Science and Strategic Initiatives and Gemini Eval Infra URLs returned Job not found and are excluded.",
+      "conversation_priority": 3
+    },
+    {
+      "company": "xAI",
+      "category": "Frontier general-purpose model lab",
+      "lab_description": "The official xAI job board now brands the employer SpaceXAI. This role supports frontier model research and capability measurement.",
+      "lab_source": "https://job-boards.greenhouse.io/xai/jobs/5188230007",
+      "careers_url": "https://job-boards.greenhouse.io/xai",
+      "roles": [
+        {
+          "title": "Software Engineer - Evals",
+          "url": "https://job-boards.greenhouse.io/xai/jobs/5188230007",
+          "location": "Palo Alto, CA; office cadence and travel unspecified",
+          "requirements": "3+ years actively coding, strong shipped projects, product judgment and attention to detail. Prior startup founding and ML/evals familiarity are bonuses.",
+          "work": "Build the research platform measuring model capabilities and behavior, experiment progress and agent failures; own execution infrastructure, datasets and grading.",
+          "model_proximity": "Direct research evaluation infrastructure used during training; no claim that this role independently develops training algorithms.",
+          "fit": "Particularly good intersection of founder product taste, reliable fullstack systems, production agents and ML experience.",
+          "stretch": "Must show that evaluations reveal real failure modes and withstand measurement errors; clarify scope and working expectations with the team.",
+          "verification": "Live official job detail and complete application form observed via web fetch on September 17.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "Which researchers use this evaluation platform daily, and can I own experimental design and failure diagnosis as well as tooling?",
+      "priority_note": "High priority for fit, pending team diligence. Count as a lab team, not a new independent corporate parent alongside Cursor/SpaceX.",
+      "conversation_priority": 4
+    },
+    {
+      "company": "Thinking Machines Lab",
+      "category": "General-purpose frontier-model research and product lab",
+      "lab_description": "Trains frontier models (Inkling), builds customization infrastructure (Tinker), and links model research with product deployment.",
+      "lab_source": "https://thinkingmachines.ai/",
+      "careers_url": "https://jobs.ashbyhq.com/ThinkingMachines",
+      "roles": [
+        {
+          "title": "Software Engineer, Evaluation Platform / Infra",
+          "url": "https://jobs.ashbyhq.com/ThinkingMachines/9d863c78-80c0-44cd-a574-d1330e125398",
+          "location": "San Francisco; on-site. Office-day count and travel not specified.",
+          "requirements": "2 years post-graduate SWE/ML work; hands-on LLM or multimodal evaluation/benchmark/model-quality systems; backend proficiency; data-intensive systems; full-stack ownership. Python/Rust backend and React/TypeScript frontend.",
+          "work": "Own evaluation authoring, execution, analysis and reproducibility across libraries, distributed systems, pipelines, APIs and interfaces; partner with pre-training, post-training and applied researchers.",
+          "fit": "Strong direct bridge from production agents/evals, Google ML and end-to-end founder engineering to daily research collaboration.",
+          "stretch": "Demonstrate rigorous, reusable eval design and distributed execution quality; app-level evals alone do not prove frontier-lab-scale infrastructure experience.",
+          "verification": "Official live careers board and rendered specific posting with full description and Apply link observed on 2026-09-17.",
+          "checked_date": "2026-09-17"
+        },
+        {
+          "title": "Research Software Engineer, Post Training",
+          "url": "https://jobs.ashbyhq.com/ThinkingMachines/4d51cb65-5e5b-42d2-8c28-7073b8574e4b",
+          "location": "San Francisco; hybrid. Office cadence and travel not specified.",
+          "requirements": "Bachelor's/equivalent; strong Python, end-to-end project leadership, code others depend on, debugging intermittent failures at scale. Large-scale sandboxing and ML-framework familiarity preferred.",
+          "work": "Embed in a small research team to build RL infrastructure, sandboxing, data pipelines and agent scaffolding.",
+          "fit": "Very relevant research-embedded route for an agent-systems builder; no PhD/publication requirement is stated.",
+          "stretch": "Operational depth and research engineering pace are real screens; production agent work is adjacent to RL training, not equivalent experience.",
+          "verification": "Official live careers board and rendered specific posting with full description and Apply link observed on 2026-09-17.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "Which researchers would I build with each week, and would I own research-facing evaluation/agent systems rather than primarily shared operational support?",
+      "priority_note": "Top new lab target: two unusually explicit engineering entry routes aligned with the resume.",
+      "conversation_priority": 5
+    },
+    {
+      "company": "Reflection AI",
+      "category": "General-purpose open frontier-model lab",
+      "lab_description": "Research lab developing open models people and organizations can customize and build on.",
+      "lab_source": "https://reflection.ai/careers",
+      "careers_url": "https://jobs.ashbyhq.com/reflectionai",
+      "roles": [
+        {
+          "title": "Member of Technical Staff - Evaluations",
+          "url": "https://jobs.ashbyhq.com/reflectionai/075f746b-df26-4738-a44a-82e6d1d615dc",
+          "location": "San Francisco, New York or London; on-site. Office-day count and travel not specified.",
+          "requirements": "Strong statistics and experimental design; familiarity with static benchmarks, human preference or agentic evaluation methodologies; collaborative, high-agency execution.",
+          "work": "Build evaluation frameworks and feedback loops, compare model capabilities, and work with pre-training/post-training/applied teams.",
+          "fit": "Direct route from model quality and production-agent measurement into research. Customer failure analysis can supply credible work examples.",
+          "stretch": "Must demonstrate sound statistical analysis and experiments that isolate model improvements; generic agent demos will not establish this.",
+          "verification": "Official live careers board and rendered specific posting with full description and Apply link observed on 2026-09-17.",
+          "checked_date": "2026-09-17"
+        },
+        {
+          "title": "Member of Technical Staff - Research Software Engineer",
+          "url": "https://jobs.ashbyhq.com/reflectionai/bf075674-ad6c-4ab6-aa30-f7c37c59e759",
+          "location": "San Francisco, New York or London; on-site. Travel not specified.",
+          "requirements": "Strong engineering and ability to implement research papers; deep experience in distributed training/inference OR data infrastructure. PhD not required.",
+          "work": "Build scalable training loops, research experimentation tools and large data pipelines with researchers.",
+          "fit": "Possible infrastructure route through Google ML/data experience.",
+          "stretch": "Substantial scale/performance gap to establish: posting emphasizes thousands of GPUs, petabyte data, numerical stability and distributed training technologies.",
+          "verification": "Official live careers board and rendered specific posting with full description and Apply link observed on 2026-09-17.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "Would the evaluation engineer design experiments with researchers and influence model changes, and which peers review methodology and code?",
+      "priority_note": "Prioritize Evaluations; Research Software Engineer is a more specialized stretch. Safety Evaluations Infrastructure also exists but demands explicit secure-execution/Trust & Safety infrastructure experience, so it was not selected.",
+      "conversation_priority": 6
+    },
+    {
+      "company": "Mistral AI",
+      "category": "General-purpose foundation-model lab with open-weight models",
+      "lab_description": "Develops foundation models and a research-to-production stack spanning developer tools, applications and compute.",
+      "lab_source": "https://jobs.ashbyhq.com/mistral.ai/b087ffe4-3f55-4072-9ff8-9f5f17b4121d",
+      "careers_url": "https://jobs.ashbyhq.com/mistral.ai",
+      "roles": [
+        {
+          "title": "Research Engineer, Code Agents Infra",
+          "url": "https://jobs.ashbyhq.com/mistral.ai/af7c3cf8-f4f4-4a16-80e9-fdfb0c14104d",
+          "location": "Palo Alto; hybrid, specific office days unspecified; on-call rotation",
+          "requirements": "4+ years systems/distributed/cloud/ML infrastructure supporting LLM or RL workloads; deep Kubernetes, container isolation, queues and performance engineering.",
+          "work": "Agent-training and execution systems, sandboxing, rollout/synthetic-data pipelines, scheduling and training-runtime performance.",
+          "model_proximity": "Direct infrastructure for agent post-training and RL experiments, working alongside researchers.",
+          "fit": "Agent tools, execution reliability and ML engineering offer a relevant starting point; strong path to learning how agent training is actually done.",
+          "stretch": "Large gap to prove in cluster-scale sandboxing, custom Kubernetes controllers, isolation and distributed training performance; ordinary agent API integration is insufficient evidence.",
+          "verification": "Live detailed official role, location and Apply link observed in rendered browser; full responsibilities read from indexed official posting.",
+          "checked_date": "2026-09-17"
+        },
+        {
+          "title": "Research Engineer, Machine Learning",
+          "url": "https://jobs.ashbyhq.com/mistral.ai/b087ffe4-3f55-4072-9ff8-9f5f17b4121d",
+          "location": "Palo Alto or San Francisco; hybrid, office days unspecified",
+          "requirements": "Master's/PhD or equivalent track record; 4+ years large-scale ML codebases; major ML framework and comfort with distributed training.",
+          "work": "Either shared training/data/cluster tools or embedded research-squad engineering; experimentation, evaluation and productionizing model capabilities.",
+          "model_proximity": "Direct training/research infrastructure or embedded alignment, pretraining or multimodal squad, depending on placement.",
+          "fit": "Cornell MEng, professional ML, model fine-tuning and production engineering make a research-engineering conversation credible.",
+          "stretch": "Distributed frontier-training experience is not established; ask for a fit assessment based on past model work and a concrete systems portfolio.",
+          "verification": "Live official detailed posting including qualifications, team options and Apply link read in rendered browser.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "Would I join an embedded research squad or a shared platform team, who would mentor me, and what experimental ownership would I get?",
+      "priority_note": "Prioritize the conversation but treat both openings as systems/research stretches rather than automatic matches. Choose the role against concrete past engineering evidence.",
+      "conversation_priority": 7
+    },
+    {
+      "company": "Cohere",
+      "category": "Enterprise-focused foundation-model lab",
+      "lab_description": "Trains foundation models and builds enterprise AI products. Product-agent and model-development roles differ substantially in research exposure.",
+      "lab_source": "https://jobs.ashbyhq.com/cohere/4a3c3eb2-ae2e-4a86-a677-7bdecbc7d76e",
+      "careers_url": "https://jobs.ashbyhq.com/cohere",
+      "roles": [
+        {
+          "title": "Software Engineer, Agents & Automations",
+          "url": "https://jobs.ashbyhq.com/cohere/4a3c3eb2-ae2e-4a86-a677-7bdecbc7d76e",
+          "location": "United States, Canada, Europe or London; remote; SF office exists but immediate team's location must be checked",
+          "requirements": "Shipped and operated production software, fullstack ability, product judgment and autonomous execution; Python, React/TypeScript, Postgres and Kubernetes stack.",
+          "work": "North's workflow builder, agent execution engine, integrations, debugging, evaluation and feedback loops; end-to-end feature ownership with modeling collaboration.",
+          "model_proximity": "Core product/agent-platform engineering at a model lab; not a model-training role.",
+          "fit": "Strong direct fit to founder fullstack delivery and production agents; useful customer/problem exposure for another startup.",
+          "stretch": "Need to verify enough daily technical-peer and modeling contact in a distributed team; otherwise the role may resemble the original application-company track.",
+          "verification": "Live official board, full detailed posting and Apply link read in rendered browser.",
+          "checked_date": "2026-09-17"
+        },
+        {
+          "title": "Member of Technical Staff, Data Analysis and Evaluation",
+          "url": "https://jobs.ashbyhq.com/cohere/61703710-4379-42fd-a508-946f2a5fb6bc",
+          "location": "San Francisco, New York, London, Montreal, Paris or Toronto; remote-friendly; posting says no minimum office requirement",
+          "requirements": "Strong engineering, statistics, experiment and data-collection design; distributed LLM training and top-venue papers listed, with explicit flexibility on the attribute list.",
+          "work": "Dataset quality, robustness/generalization analysis, experiments and LLM training/fine-tuning with researchers and annotators.",
+          "model_proximity": "Direct modeling department evaluation and training work.",
+          "fit": "Prior ML training and retrieval, measured agent failures and product feedback provide an angle for a targeted research-engineering pitch.",
+          "stretch": "Distributed LLM training, rigorous annotator experiment design and publication record are unproven; much more demanding than product SWE despite flexible wording.",
+          "verification": "Live official board, full detailed role and Apply link observed in browser.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "How much of the week is spent with the modeling researchers, and can this position own the evaluation-to-model-improvement loop?",
+      "priority_note": "Useful pair of routes: product engineering is the stronger immediate fit; Modeling is a deliberate stretch. The previously indexed Senior Software Engineer, Agent Infrastructure role is closed and excluded.",
+      "conversation_priority": 8
+    },
+    {
+      "company": "Ai2",
+      "category": "Open foundation-model and scientific-agent research institute",
+      "lab_description": "Nonprofit research institute developing open models such as Olmo and Molmo, plus scientific research agents. Included for research depth and openness, not a claim of equal frontier capability across every task.",
+      "lab_source": "https://job-boards.greenhouse.io/thealleninstitute/jobs/7980660",
+      "careers_url": "https://job-boards.greenhouse.io/thealleninstitute",
+      "roles": [
+        {
+          "title": "Research Engineer, Asta",
+          "url": "https://job-boards.greenhouse.io/thealleninstitute/jobs/7899565",
+          "location": "Seattle, WA; office work expected, team-specific cadence; relocation is a material condition",
+          "requirements": "2+ years agent infrastructure and 2+ years ML infrastructure; Python and PyTorch/JAX/TensorFlow; ML/NLP/RL knowledge; bachelor's or equivalent.",
+          "work": "Scientific-agent research infrastructure, planning, memory, evaluation, model training and post-training; release open-source tools, models and reports.",
+          "model_proximity": "Direct agent research and model tuning with a research/engineering team; distinct from Olmo base-model pretraining.",
+          "fit": "One of the better research-engineer matches for production agents, memory/tool use, prior model work and software ownership.",
+          "stretch": "Prove the agent- and ML-infrastructure experience separately and refresh RL/framework fluency; Seattle conflicts with SF-first preference.",
+          "verification": "Live official board, detailed posting and full application form verified by web fetch.",
+          "checked_date": "2026-09-17"
+        },
+        {
+          "title": "Senior Research Engineer, Olmo + Molmo",
+          "url": "https://job-boards.greenhouse.io/thealleninstitute/jobs/7980660",
+          "location": "Seattle, WA; office expected; role says location exceptions case by case, not guaranteed remote",
+          "requirements": "Posting emphasizes 8 years industry and 4+ years ML infrastructure, end-to-end model development and modern language/vision-language training; a later generic section says 2 years software, so clarify leveling.",
+          "work": "Train flagship open models, build training/inference and data pipelines, design experiments and release open models and research artifacts.",
+          "model_proximity": "Direct core foundation-model training and research.",
+          "fit": "Earlier vision deployment, Google NLP/retrieval and subsequent agents create a coherent cross-modal engineering story.",
+          "stretch": "Large-model training, modern multimodal architecture experience and required ML-infrastructure depth need proof; overall years alone do not establish fit.",
+          "verification": "Live official board, detailed role and application form verified by web fetch.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "For Asta, which research questions and model experiments would I own, and how much of the daily team is in Seattle? For Olmo/Molmo, what evidence would establish fit without past frontier-scale runs?",
+      "priority_note": "High research-fit interest if Seattle is acceptable. Asta is the more plausible immediate route; Olmo/Molmo is a direct model-building stretch. Closed FlexOlmo role excluded.",
+      "conversation_priority": 9
+    },
+    {
+      "company": "Prime Intellect",
+      "category": "Open training / research infrastructure and model-research lab",
+      "lab_description": "Combines open-model research with a developer platform for compute, RL environments, evaluations, sandboxes, training and deployment.",
+      "lab_source": "https://www.primeintellect.ai/",
+      "careers_url": "https://jobs.ashbyhq.com/PrimeIntellect",
+      "roles": [
+        {
+          "title": "Applied Research - Forward-Deployed",
+          "url": "https://jobs.ashbyhq.com/PrimeIntellect/73f42d73-f967-4082-b599-b8914135a6b3",
+          "location": "San Francisco. Header says on-site; benefits say SF or hybrid-remote, so confirm. Most time embedded with customers; travel amount not specified.",
+          "requirements": "Recent hands-on LLM agents/evaluations/deployment; Python; working understanding of RL/post-training concepts. Technical-founder experience explicitly relevant; writing a trainer from scratch not required.",
+          "work": "Translate customer failures into RL environments, eval harnesses, agent memory/tool/sandbox scaffolds, training runs and reusable deployment recipes.",
+          "fit": "Exceptionally direct match to founder/customer ownership plus agents and evals; potential to learn how production failures become model improvements.",
+          "stretch": "Show real RL/post-training understanding and evaluation rigor. Customer-heavy time may reduce daily internal research-peer exposure.",
+          "verification": "Official live careers board and rendered specific posting with full description and Apply link observed on 2026-09-17.",
+          "checked_date": "2026-09-17"
+        },
+        {
+          "title": "Member of Technical Staff - Full Stack Software Engineer",
+          "url": "https://jobs.ashbyhq.com/PrimeIntellect/c074bdd9-bee2-4ee9-ae03-aa8f7537682c",
+          "location": "San Francisco or remote; office cadence and travel not specified.",
+          "requirements": "Python/FastAPI/async, React/Next.js/TypeScript, APIs, developer tools, cloud/container deployment and infrastructure automation.",
+          "work": "Build the developer-facing training/deployment platform and workload monitoring, APIs and job-control interfaces end to end.",
+          "fit": "A direct full-stack product-engineering fit with developer customers and proximity to the lab's own training platform.",
+          "stretch": "Confirm direct researcher access versus only product surface work; substantiate infrastructure automation and production operations depth.",
+          "verification": "Official live careers board and rendered specific posting with full description and Apply link observed on 2026-09-17.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "How much of my week is spent with internal researchers versus external customers, and can I own the loop from evaluation failure through a validated training improvement?",
+      "priority_note": "High priority for founder learning and agent/RL tooling. Distinguish this open-stack/product lab from a pure general-model lab.",
+      "conversation_priority": 10
+    },
+    {
+      "company": "World Labs",
+      "category": "Spatial intelligence / world-model research and product lab",
+      "lab_description": "Builds world models for virtual and physical environments; Marble turns prompts and visual inputs into navigable 3D worlds.",
+      "lab_source": "https://www.worldlabs.ai/careers",
+      "careers_url": "https://jobs.ashbyhq.com/worldlabs",
+      "roles": [
+        {
+          "title": "Senior Product Engineer (Tech Lead)",
+          "url": "https://jobs.ashbyhq.com/worldlabs/c00efc41-a495-4a97-94e2-729c0f451f00",
+          "location": "San Francisco; on-site. Office-day count and travel not specified.",
+          "requirements": "6+ years software engineering (8+ Staff); strong React/TypeScript and backend systems; shipped end-to-end products; async/streaming APIs. Graphics/3D experience preferred, not required.",
+          "work": "Own user-facing applications and developer tools, async generation workflows and product iteration with users; act as engineering counterpart to product leadership.",
+          "fit": "Strong founder/product engineering match. Earlier APL vision/deployment experience adds relevant spatial context without claiming world-model research.",
+          "stretch": "Tech-lead execution and product polish are core screens. Posting says product team leans on design, so excellent research colleagues do not guarantee daily engineering mentorship.",
+          "verification": "Official live careers board and rendered specific posting with full description and Apply link observed on 2026-09-17.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "Which senior engineers and researchers will review my work, and how often will product findings feed directly into world-model research?",
+      "priority_note": "Strong specialized-lab option, especially if spatial interfaces are interesting; scope is product engineering rather than world-model training.",
+      "conversation_priority": 11
+    },
+    {
+      "company": "Physical Intelligence",
+      "category": "Robotics foundation-model research lab",
+      "lab_description": "Develops general-purpose models and learning algorithms for robots and physical devices.",
+      "lab_source": "https://www.pi.website/",
+      "careers_url": "https://www.pi.website/join-us",
+      "roles": [
+        {
+          "title": "ML Infra Engineer (Data Systems)",
+          "url": "https://www.pi.website/join-us?ashby_jid=1f6cf3eb-f70f-480b-9fff-befd56c7fd07",
+          "location": "San Francisco Mission District; on-site. Application explicitly requires ability to report to SF office. Travel not specified.",
+          "requirements": "Distributed systems or large-scale pipelines; storage/I/O/performance reasoning; batch/streaming and object-storage experience; end-to-end operational ownership. ML training data and petabyte-scale experience are bonuses.",
+          "work": "Build multimodal data ingestion, storage, indexing and training data delivery with researchers and roboticists.",
+          "fit": "Google ML/data background and earlier APL computer vision/embedded deployment provide a credible bridge to research infrastructure for robotics.",
+          "stretch": "Must establish distributed-data and operational depth; APL UAV perception is not VLA/world-model training experience.",
+          "verification": "Live official role index and embedded full description plus application form observed 2026-09-17.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "Would I own researcher-facing evaluation/data systems with fast feedback from robot experiments, and who would mentor me on robot-learning workloads?",
+      "priority_note": "Good research-infrastructure stretch. The official board also lists Fullstack Software Engineer, Robot Interfaces, but its embedded application showed no description, so detailed scope/requirements were not verified and it is not counted as a fully researched role.",
+      "unverified_role_lead": {
+        "title": "Fullstack Software Engineer, Robot Interfaces",
+        "url": "https://www.pi.website/join-us?ashby_jid=86237337-963a-4e0e-bcf7-82d366e5f0fc",
+        "verification": "Official index and application form present; embedded description blank when inspected. Ask for scope before treating as a fit."
+      },
+      "conversation_priority": 12
+    },
+    {
+      "company": "Safe Superintelligence",
+      "category": "General-purpose frontier / superintelligence research lab",
+      "lab_description": "Aims to build safe superintelligence with a research focus insulated from short-term product cycles.",
+      "lab_source": "https://ssi.inc/",
+      "careers_url": "https://jobs.ashbyhq.com/ssi/b91659e4-9352-46fa-b3c5-4fb28827eb2e",
+      "roles": [
+        {
+          "title": "Member of Technical Staff",
+          "url": "https://jobs.ashbyhq.com/ssi/b91659e4-9352-46fa-b3c5-4fb28827eb2e",
+          "location": "Palo Alto or Tel Aviv; office cadence and travel not specified.",
+          "requirements": "Broad call for engineers and researchers; specific qualifications and team requirements are not published.",
+          "work": "Specific responsibilities, engineering team and research access are not published.",
+          "fit": "Potential Bay Area research-peer environment, but engineering fit cannot be established from the broad posting.",
+          "stretch": "Exploratory/high-uncertainty target. The public mission is not evidence of suitable immediate mentorship, scope or hiring bar. Less explicit customer/product learning.",
+          "verification": "Official homepage directly links this live broad MTS posting; rendered description and Apply link observed 2026-09-17. It is not a verified specialized engineering vacancy.",
+          "checked_date": "2026-09-17"
+        }
+      ],
+      "team_question": "Is there a concrete systems/evaluation engineering role matching my production ML and founder background, and who would provide daily technical feedback?",
+      "priority_note": "Include as an ambitious exploratory conversation; do not rank as a ready-matched role.",
+      "conversation_priority": 13
+    },
+    {
+      "company": "Meta AI / Superintelligence",
+      "category": "Frontier general-purpose model lab within Meta",
+      "lab_description": "Meta's official AI careers page describes MSL, model development and deployment across its assistant and multimodal products.",
+      "lab_source": "https://www.metacareers.com/teams/technology?tab=AI",
+      "careers_url": "https://www.metacareers.com/teams/technology?tab=AI",
+      "roles": [],
+      "watchlist": {
+        "status": "Unverified prospect; no live specific vacancy counted",
+        "target_teams": "Research engineering for model evaluations, agent post-training, retrieval/tool use, or research infrastructure",
+        "candidate_title": "Research Engineer - MSL FAIR Foundations / Evaluations",
+        "candidate_url": "https://www.metacareers.com/profile/job_details/874898091996160/",
+        "verification": "Official detail returned HTTP 429 through web and an empty rendered page in browser. A third-party copy had a September 7 expiry, so do not present as live. Use a Meta contact to establish current team openings and request a current official job URL.",
+        "checked_date": "2026-09-17"
+      },
+      "team_question": "Which current MSL team hires engineers with production ML, retrieval and agent experience, and what is the exact current requisition and daily research collaboration?",
+      "priority_note": "Worth targeting through network even though a live role was not verified. Do not substitute generic Meta ads/recommendations roles for a frontier-model team without explicit team evidence.",
+      "conversation_priority": 14
+    }
+  ],
+  "verified_specific_role_count": 21,
+  "broad_intake_count": 1,
+  "unverified_target_count": 1
+}
